@@ -1,4 +1,4 @@
--- Judah Paulo Vinas
+
 CREATE DATABASE library;
 USE library;
 
