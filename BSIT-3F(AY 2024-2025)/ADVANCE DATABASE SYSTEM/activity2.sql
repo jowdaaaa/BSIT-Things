@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+-- Judah Paulo Vinas
+>>>>>>> 0ca5626e02d4c2e63f6a9bc548cb8d8f3d77e019
 CREATE DATABASE library;
 USE library;
 
