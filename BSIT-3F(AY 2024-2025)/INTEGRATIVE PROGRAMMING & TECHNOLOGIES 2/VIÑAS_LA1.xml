@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book bn="1111">
+        <title>Noli Me Tangere</title>
+        <author>José Rizal</author>
+        <category>Historical Fiction</category>
+        <year>1887</year>
+        <edition>1st Edition</edition>
+        <price>250.00</price>
+    </book>
+    <book bn="2222">
+        <title>El Filibusterismo</title>
+        <author>José Rizal</author>
+        <category>Historical Fiction</category>
+        <year>1891</year>
+        <edition>1st Edition</edition>
+        <price>300.00</price>
+    </book>
+    <book bn="3333">
+        <title>Ibong Adarna</title>
+        <author>Anonymous</author>
+        <category>Epic Poetry</category>
+        <year>1600s</year>
+        <edition>Revised Edition</edition>
+        <price>150.00</price>
+    </book>
+    <book bn="4444">
+        <title>Florante at Laura</title>
+        <author>Francisco Balagtas</author>
+        <category>Epic Poetry</category>
+        <year>1838</year>
+        <edition>1st Edition</edition>
+        <price>180.00</price>
+    </book>
+    <book bn="5555">
+        <title>Dekada '70</title>
+        <author>Lualhati Bautista</author>
+        <category>Political Fiction</category>
+        <year>1983</year>
+        <edition>1st Edition</edition>
+        <price>200.00</price>
+    </book>
+</bookstore>
