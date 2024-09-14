@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Audio & Video</title>
+    </head>
+
+    <body>
+        
+        <!--             Source Element             -->
+        <!-- <source> - indicates files for the browser to choose from -->
+        <!-- <source src="music.mp3" type="audio/mp3">
+             <source src="music.ogg" type="audio/ogg"> -->
+        <!-- Source tags are used within <audio>,<video> and <picture> elements -->
+        
+        <!--       Source Element Attributes        -->
+        <!-- type - indicates the MIME-type of the resource -->
+
+        <!--            Audio Element               -->
+        <h1>Audio</h1>
+        <h3>With source (may pagpipilian)</h3>
+        <audio controls>
+            <source src="music/music.mp3" type="audio/mp3">
+            <source src="music/music.mp3" type="audio/ogg">
+            Not supported.
+        </audio><br>
+        <!--OR-->
+        <h3>Deretso na lang</h3>
+        <audio src="music/music.mp3" controls> Not supported. </audio>
+
+        <!--         Audio Element Attributes
+            *controls - shows controls like play, pause
+            *autoplay - play audio automatically when loaded
+            *muted - the audio would be muted by default
+            *loop - makes the audio replay indinite times
+        -->
+        <h1>Audio Element Attributes</h1>
+        <h3>controls</h3>
+        <audio src="music/music.mp3" controls> </audio>
+        <h3>autoplay</h3>
+        <!--<audio src="music.mp3" autoplay> </audio>-->
+        <h3>muted</h3>
+        <audio src="music/music.mp3" muted> </audio>
+        <h3>loop</h3>
+        <audio src="music/music.mp3" loop> </audio>
+        
+        <!--            Video Element               -->
+        <h1>Video</h1>
+        <h3>With source (may pagpipilian)</h3>
+        <video width="320" height="320" controls>
+            <source src="video/video.mp4" type="audio/mp4">
+            <source src="video/video.ogg" type="audio/ogg">
+            Not supported.
+        </video>
+        <!--OR-->
+        <h3>Deretso na lang</h3>
+        <video src="video/video.mp4" width="320" height="320" controls>Not supported.</video>
+        
+        <!--         Video Element Attributes
+            *controls - shows controls like play, pause
+            *autoplay - play audio automatically when loaded
+            *muted - the audio would be muted by default
+            *loop - makes the audio replay indinite times
+        -->
+        <h1>Video Element Attributes</h1>
+        <h3>controls</h3>
+        <video src="video/video.mp4" controls> </video>
+        <h3>autoplay</h3>
+        <video src="video/video.mp4" autoplay muted> </video>
+        <h3>muted</h3>
+        <video src="video/video.mp4" muted> </video>
+        <h3>loop</h3>
+        <video src="video/video.mp4" loop> </video>
+
+    </body>
+
+</html>

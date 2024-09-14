@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>HTML Forms</title>
+	</head>
+	
+	<body>
+	
+		<!--         <form> Element           
+			The HTML <form> element is used to create an HTML form for user input:
+				<form>
+				.
+				<input> form elements
+				.
+				</form>
+		-->
+		<!--          <input> Element
+			<input type="text">		- Displays a single-line text input field
+			<input type="radio">	- Displays a radio button (for selecting one of many choices)
+			<input type="checkbox">	- Displays a checkbox (for selecting zero or more of many choices)
+			<input type="submit">	- Displays a submit button (for submitting the form)
+			<input type="button">	- Displays a clickable button
+		-->
+
+		<h1 style="color: rgb(5, 113, 121)">'input' Type</h1>
+		<!--Text-->
+		<h3 style="color: red">Text</h3>
+		<form>
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" placeholder="Enter First Name"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+		</form>
+
+		<!--			  Label
+			The <label> element is useful for screen-reader users, because the screen-reader 
+				will read out loud the label when the user focus on the input element.
+			The <label> element also help users who have difficulty clicking on very small regions
+				(such as radio buttons or checkboxes) - because when the user clicks the text 
+				within the <label> element, it toggles the radio button/checkbox.
+		-->
+
+		<!--Radio-->
+		<h3 style="color: red">Radio Button</h3>
+		<p>Choose your favorite Web language:</p>
+		<form>
+			<input type="radio" id="mark" name="fname" value="Mark">
+			<label for="html">Mark</label><br>
+			<input type="radio" id="david" name="fname" value="David">
+			<label for="css">David</label><br>
+			<input type="radio" id="john" name="fname" value="John">
+			<label for="javascript">John</label>
+		</form>
+
+		<!--Checkboxes-->
+		<h3 style="color: red">Checkboxes</h3>
+		<form>
+			<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+			<label for="vehicle1"> I have a bike</label><br>
+			<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+			<label for="vehicle2"> I have a car</label><br>
+			<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+			<label for="vehicle3"> I have a boat</label>
+		</form>
+
+		<!--Submit-->
+		<h3 style="color: red">Submit Button</h3>
+		<form action="/action_page.php">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<!--Input-->
+		<h3 style="color: red">Input</h3>
+		<form action="/action_page.php">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" value="John"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+		<hr>
+
+
+
+
+
+
+
+		<!--         HTML <form> Attributes
+			accept-charset	 	Specifies the character encodings used for form submission
+			action				Specifies where to send the form-data when a form is submitted
+			autocomplete		Specifies whether a form should have autocomplete on or off
+			enctype				Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+			method				Specifies the HTTP method to use when sending form-data
+			name				Specifies the name of the form
+			novalidate			Specifies that the form should not be validated when submitted
+			rel					Specifies the relationship between a linked resource and the current document
+			target				Specifies where to display the response that is received after submitting the form
+		-->
+
+		<h1 style="color: rgb(5, 113, 121)">'form' Attributes</h1>
+		<!--Action-->
+		<h3 style="color: red">Action Attribute</h3>
+		<form action="/action_page.php">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<!--		Target Attribute
+			_blank		-The response is displayed in a new window or tab
+			_self		-The response is displayed in the current window
+			_parent		-The response is displayed in the parent frame
+			_top		-The response is displayed in the full body of the window
+			framename	-The response is displayed in a named iframe
+		-->
+		<!--Target-->
+		<h3 style="color:red">Target Attribute</h3>
+		<form action="/action_page.php" target="_blank">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<!--Method-->
+		<h3 style="color:red">Method Attribute</h3>
+		<form action="/action_page.php" method="get"><!--GET - Appends the form data to the URL, in name/value pairs-->
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+		<br>
+		<form action="/action_page.php" method="post"><!--POST - Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)-->
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<!--Autocomplete-->
+		<h3 style="color:red">Autocomplete Attribute</h3>
+		<form action="/action_page.php" autocomplete="on">
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname"><br><br>
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email"><br><br>
+			<input type="submit">
+		</form>
+
+		<!--Novalidate-->
+		<h3 style="color:red">Novalidate Attribute</h3>
+		<form action="/action_page.php" novalidate>
+			<label for="email">Enter your email:</label>
+			<input type="email" id="email" name="email"><br><br>
+			<input type="submit">
+		</form>
+		<hr>
+
+
+
+
+
+
+
+		<!--		Form Element
+			<form>		Defines an HTML form for user input
+			<input>		Defines an input control
+			<textarea>	Defines a multiline input control (text area)
+			<label>		Defines a label for an <input> element
+			<fieldset>	Groups related elements in a form
+			<legend>	Defines a caption for a <fieldset> element
+			<select>	Defines a drop-down list
+			<optgroup>	Defines a group of related options in a drop-down list
+			<option>	Defines an option in a drop-down list
+			<button>	Defines a clickable button
+			<datalist>	Specifies a list of pre-defined options for input controls
+			<output>	Defines the result of a calculation
+		-->
+		<h1 style="color: rgb(5, 113, 121)">'form' Elements</h1>
+		<!--input-->
+		<h3 style="color: red">input Element</h3>
+		<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname">
+
+		<!--label-->
+		
+		<!--select-->
+		<h3 style="color: red">select Element</h3>
+		<label for="cars">Choose a car:</label>
+		<select id="cars" name="cars">
+			<option value="volvo">Volvo</option> 
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+
+		<!--option-->   <!--The <option> elements defines an option that can be selected.-->
+		<h3 style="color: red">option Element</h3>
+		<label for="cars">Choose a car:</label>
+		<select id="cars" name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat" selected>Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+		<input type="submit">
+
+		<h5>* Visible Value</h5> <!--Use the size attribute to specify the number of visible values-->
+		<form action="/action_page.php">
+			<label for="cars">Choose a car:</label>
+			<select id="cars" name="cars" size="3">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select><br><br>
+			<input type="submit">
+		</form>
+
+		<h5>* Multiple Selection</h5><!--Use the multiple attribute to allow the user to select more than one value-->
+		<p>Use the multiple attribute to allow the user to select more than one value.</p>
+		<form action="/action_page.php">
+		<label for="cars">Choose a car:</label>
+		<select id="cars" name="cars" size="4" multiple>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select><br><br>
+		<input type="submit">
+		</form>
+
+		<!--textarea--><!-- * The rows attribute specifies the visible number of lines in a text area.
+							* The cols attribute specifies the visible width of a text area.
+							You can also define the size of the text area by using CSS-->
+		<h3 style="color: red"> textarea Element</h3>
+		<form action="/action_page.php">
+			<textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+			<br><br>
+			<input type="submit">
+		</form>
+
+		<!--button-->
+		<h3 style="color: red"> button Element</h3>
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+		<!--fieldset and legend-->
+		<h3 style="color: red"> fieldset&legend Element</h3>
+		<form action="/action_page.php">
+			<fieldset>
+				<legend>Personalia:</legend>
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname" value="John"><br>
+				<label for="lname">Last name:</label><br>
+				<input type="text" id="lname" name="lname" value="Doe"><br><br>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+
+		<!--datalist-->
+		<h3 style="color: red"> datalist Element</h3>
+		<form action="/action_page.php">
+			<input list="browsers">
+			<datalist id="browsers">
+				<option value="Internet Explorer">
+				<option value="Firefox">
+				<option value="Chrome">
+				<option value="Opera">
+				<option value="Safari">
+			</datalist>
+		</form>
+
+		<!--output-->
+		<h3 style="color: red"> output Element</h3>
+		<form action="/action_page.php"
+			oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+			0
+			<input type="range" id="a" name="a" value="50">
+			100 +
+			<input type="number" id="b" name="b" value="50">
+			=
+			<output name="x" for="a b"></output>
+			<br><br>
+			<input type="submit">
+		</form>
+
+
+
+
+
+
+		<!---->
+
+
+
+
+
+
+		
+
+	</body>
+	
+</html>

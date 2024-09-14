@@ -1,0 +1,48 @@
+Database Name: test
+Username:	4361268_test
+Database Password:	TestDatabase@2023
+Host:	fdb1032.awardspace.net
+Port:	3306
+
+
+
+
+landing page should be display of tasks
+add "deleting task confirmation"
+html UI for task display
+
+
+
+username = (task) title
+password = (task) description
+confirm password = (task) date
+name = (task) time
+
+Simple Task Manager
+
+	Create Task
+>>Task Number (11)
+>>Task Title (35)
+>>Task Description (250)
+>>Task Date
+>>Task Time
+
+
+
+Database Third Normal Form
+
+>>Task Number, Task Title, Task Description
+>>Task Title, Task Date, Task Time
+
+
+	Read Task
+>>Task Display
+
+	Update Task
+>>Task Display
+>>Ask for Task Number
+
+	Delete Task
+>>Task Display
+>>Ask for Task Number
+>>"Are you sure you want to delete this task?"

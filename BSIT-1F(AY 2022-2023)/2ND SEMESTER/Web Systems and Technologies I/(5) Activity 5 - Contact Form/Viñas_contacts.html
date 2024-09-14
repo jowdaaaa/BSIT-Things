@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce51c8d086.js" crossorigin="anonymous"></script>
+    <title>Contact Form</title>
+</head>
+<body>
+    
+    <h1>Contact Sign-Up Form</h1>
+
+    <form id="form">
+        <div class="fill">
+            <input type="text" id="fname" autocomplete="off">
+            <label class="label">First Name</label>
+            <i class="fa-solid fa-circle-check success"></i>
+            <i class="fa-solid fa-circle-xmark failure"></i>
+            <div class="error"></div>
+        </div>
+        <div class="fill">
+            <input type="text" id="lname" autocomplete="off">
+            <label class="label">Last Name</label>
+            <i class="fa-solid fa-circle-check success"></i>
+            <i class="fa-solid fa-circle-xmark failure"></i>
+            <div class="error"></div>
+        </div>
+        <div class="fill">
+            <input type="email" id="email" autocomplete="off">
+            <label class="label">Email Address</label>
+            <i class="fa-solid fa-circle-check success"></i>
+            <i class="fa-solid fa-circle-xmark failure"></i>
+            <div class="error"></div>
+        </div>
+        <div class="fill">
+            <input type="number" id="number" autocomplete="off">
+            <label class="label">Phone Number</label>
+            <i class="fa-solid fa-circle-check success"></i>
+            <i class="fa-solid fa-circle-xmark failure"></i>
+            <div class="error"></div>
+        </div>
+        <div class="fill">
+            <input type="Password" id="password" autocomplete="off">
+            <label class="label">Password</label>
+            <i class="fa-solid fa-circle-check success"></i>
+            <i class="fa-solid fa-circle-xmark failure"></i>
+            <div class="error"></div>
+        </div>
+        <div class="fill">
+            <input type="Password" id="confirm" autocomplete="off">
+            <label class="label">Confirm Password</label>
+            <i class="fa-solid fa-circle-check success"></i>
+            <i class="fa-solid fa-circle-xmark failure"></i>
+            <div class="error"></div>
+        </div>
+        <div class="select">
+            <label>Area of Expertise</label>
+            <select id="select">
+                <option value="" class="select">Select</option>
+                <option value="option1" class="select">PROGRAMMER</option>
+                <option value="option2" class="select">WEB DEV</option>
+                <option value="option3" class="select">UI/UX</option>
+            </select>
+            <div class="error sel"></div>
+        </div>
+        <button type="submit" id="submit" onclick="myFunction()">SUBMIT</button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

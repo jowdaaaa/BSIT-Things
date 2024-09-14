@@ -1,0 +1,45 @@
+/*external css*/
+body {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	background-image: url("pics2.jpg");
+	background-attachment: fixed;
+}
+.first {
+	color: white;
+	text-align: center;
+	font:20px arial, sans-sefif;
+	background-color: red;
+	margin: 50px 25px 50px 25px;
+	border: 5px solid black; /*shorthand*/
+	padding: 5px 20px 5px 20px;
+	height: 50vh;
+} 
+
+.second {
+	color: black;
+	text-align: left;
+	font:20px Georgia, serif;
+	background-color: yellow;
+	margin: 50px 25px 50px 25px;
+	border-style: dotted;
+	border-color: black;
+	border-width: 5px;
+	padding: 5px 20px 5px 20px;
+	height: 50vh;
+}
+
+.third {
+	color: white;
+	text-align: right;
+	font: italic small-caps bold 20px arial, sans-sefif;
+	background-color: blue;
+	margin: 50px 25px 50px 25px;
+	border-style: double;
+	border-color: black;
+	border-width: 5px;
+	padding: 5px 20px 5px 20px;
+	height: 50vh;
+} 

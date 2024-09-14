@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="htmllesson.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    
+    <div class="banner">
+        <div class="logo">
+            <a href="home.html"><img src="Pictures/logo.png" alt="error"></a>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="htmllesson.html" class="active">HTML</a></li>
+                <li><a href="csslesson.html">CSS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <div class="first">
+                <li><a href="#intro">HTML Introduction</a></li>
+                <li><a href="#edit">HTML Editors</a></li>
+                <li><a href="#basic">HTML Basic</a></li>
+                <li><a href="#elements">HTML Elements</a></li>
+                <li><a href="#paragraphs">HTML Paragraphs</a></li>
+                
+            </div>
+            <div class="second">    
+                <li><a href="#styles">HTML Styles</a></li>
+                <li><a href="#colors">HTML Colors</a></li>
+                <li><a href="#images">HTML Images</a></li>
+                <li><a href="#lists">HTML Lists</a></li>
+                <li><a href="#forms">HTML Forms</a></li>
+            </div>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="container">
+        <h1 class="head" id="intro">HTML Introduction</h1>
+        <div class="content">
+            <h3>What is HTML?</h3>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML consists of a series of elements</li>
+                <li>HTML elements tell the browser how to display the content</li>
+                <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+            </ul>
+            <h3>A Simple HTML Document</h3>
+            <h4>Example :</h4>
+            <img src="htmlpics/Picture1.png" alt="error">
+            <h3>What is an HTML Element?</h3>
+            <p>An HTML element is defined by a start tag, some content, and an end tag</p>
+            <img src="htmlpics/Picture2.png" alt="error">
+            <h3>Web Browsers</h3>
+            <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.</p>
+            <p>A browser does not display the HTML tags, but uses them to determine how to display the document :</p>
+            <img src="htmlpics/Picture3.png" alt="error">
+            <h3>HTML Page Structure</h3>
+            <p>Below is a visualization of an HTML page structure :</p>
+            <img src="htmlpics/Picture4.png" alt="error">
+            <h3>HTML History</h3>
+            <p>Since the early days of the World Wide Web, there have been many versions of HTML :</p>
+            <img src="htmlpics/Picture5.png" alt="error">
+        </div>
+
+        <h1 class="head" id="edit">HTML Editors</h1>
+        <div class="content">
+            <p class="mean">A simple text editor is all you need to learn HTML.</p>
+            <h3>Learn HTML Using Notepad or TextEdit</h3>
+            <p>Web pages can be created and modified by using professional HTML editors.<br>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).<br>We believe that using a simple text editor is a good way to learn HTML.<br>Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+            <div class="iba">
+               <h4>Step 1: Open Notepad (PC)</h4>
+                <p>Windows 8 or later:Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad.<br>Windows 7 or earlier:<br>Open Start > Programs > Accessories > Notepad</p>
+                <h4>Step 1: Open TextEdit (Mac)</h4>
+                <p>Open Finder > Applications > TextEdit<br>Also change some preferences to get the application to save files correctly. In Preferences > Format > choose "Plain Text"<br>Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".<br>Then open a new document to place the code.</p>
+                <h4>Step 2: Write Some HTML</h4>
+                <p>Write or copy the following HTML code into Notepad :</p>
+                <img src="htmlpics/Picture6.png" alt="error">
+                <img src="htmlpics/Picture7.png" alt="error">
+                <h4>Step 3: Save the HTML Page</h4>
+                <p>Save the file on your computer. Select File > Save as in the Notepad menu.<br> Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).</p>
+                <img src="htmlpics/Picture8.png" alt="error">
+                <h4>Step 4: View the HTML Page in Your Browser</h4>
+                <p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").<br>The result will look much like this :</p>
+                <img src="htmlpics/Picture9.png" alt="error">
+            </div>
+        </div>
+        
+        <h1 class="head" id="basic">HTML Basic</h1>
+        <div class="content"> 
+            <p class="mean">In this chapter we will show some basic HTML examples.<br>Don't worry if we use tags you have not learned about yet.</p>
+            <h3>HTML Documents</h3>
+            <p>All HTML documents must start with a document type declaration: <strong class="tag">&lt;!DOCTYPE html&gt;</strong>. <br>The HTML document itself begins with <strong class="tag">&lt;html&gt;</strong> and ends with <strong class="tag">&lt;/html&gt;</strong>.<br>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
+            <img src="htmlpics/Picture10.png" alt="error">
+            <h3>The &lt;!DOCTYPE> Declaration</h3>
+            <p>The <strong class="tag">&lt;!DOCTYPE&gt;</strong> declaration represents the document type, and helps browsers to display web pages correctly.<br>It must only appear once, at the top of the page (before any HTML tags).<br>The <strong class="tag">&lt;!DOCTYPE&gt;</strong> declaration is not case sensitive.<br>The <strong class="tag">&lt;!DOCTYPE&gt;</strong> declaration for HTML5 is :</p>
+            <h3>HTML Headings</h3>
+            <p>HTML headings are defined with the <strong class="tag">&lt;h1&gt;</strong> to <strong class="tag">&lt;h6&gt;</strong> tags.<br> <strong class="tag">&lt;h1&gt;</strong> defines the most important heading. <strong class="tag">&lt;h6&gt;</strong> defines the least important heading :</p>
+            <img src="htmlpics/Picture11.png" alt="error">
+            <h3>HTML Paragraphs</h3>
+            <p>HTML paragraphs are defined with the <strong class="tag">&lt;p&gt;</strong> tag :</p>
+            <img src="htmlpics/Picture12.png" alt="error">
+            <h3>HTML Links</h3>
+            <p>HTML links are defined with the <strong class="tag">&lt;a&gt;</strong> tag :</p>
+            <img src="htmlpics/Picture13.png" alt="error">
+            <p>The link's destination is specified in the href attribute. </p>
+            <p>Attributes are used to provide additional information about HTML elements.</p>
+            <p>You will learn more about attributes in a later chapter.</p>
+            <h3>HTML Images</h3>
+            <p>HTML images are defined with the <strong class="tag">&lt;img&gt;</strong> tag.<br>The source file (src), alternative text (alt), width, and height are provided as attributes</p>
+            <img src="htmlpics/Picture14.png" alt="error">
+        </div>
+
+        <h1 class="head" id="elements">HTML Elements</h1>
+        <div class="content">     
+            <p class="mean">An HTML element is defined by a start tag, some content, and an end tag.</p>
+            <h3>Nested HTML Elements</h3>
+            <p>HTML elements can be nested (this means that elements can contain other elements).<br>All HTML documents consist of nested HTML elements.<br>The following example contains four HTML elements (<strong class="tag">&lt;html&gt;</strong>, <strong class="tag">&lt;body&gt;</strong>, <strong class="tag">&lt;h1&gt;</strong> and <strong class="tag">&lt;p&gt;</strong>)</p>
+            <img src="htmlpics/Picture15.png" alt="error">
+            <h4>Example Explained</h4>
+            <p>The <strong class="tag">&lt;html&gt;</strong> element is the root element and it defines the whole HTML document.<br>It has a start tag <strong class="tag">&lt;html&gt;</strong> and an end tag <strong class="tag">&lt;/html&gt;</strong>.<br>Then, inside the <strong class="tag">&lt;html&gt;</strong> element there is a <strong class="tag">&lt;body&gt;</strong> element :</p>
+            <img src="htmlpics/Picture16.png" alt="error">
+            <p>The <strong class="tag">&lt;body&gt;</strong> element defines the document's body.<br>It has a start tag <strong class="tag">&lt;body&gt;</strong> and an end tag <strong class="tag">&lt;/body&gt;</strong>.<br>Then, inside the <strong class="tag">&lt;body&gt;</strong> element there are two other elements: <strong class="tag">&lt;h1&gt;</strong> and <strong class="tag">&lt;p&gt;</strong> :</p>
+            <img src="htmlpics/Picture17.png" alt="error">
+            <p>The <strong class="tag">&lt;h1&gt;</strong> element defines a heading.<br>It has a start tag <strong class="tag">&lt;h1&gt;</strong> and an end tag <strong class="tag">&lt;/h1&gt;</strong> :</p>
+            <img src="htmlpics/Picture18.png" alt="error">
+            <p>The <strong class="tag">&lt;p&gt;</strong> element defines a paragraph.<br>It has a start tag <strong class="tag">&lt;p&gt;</strong> and an end tag <strong class="tag">&lt;/p&gt;</strong> :</p>
+            <img src="htmlpics/Picture19.png" alt="error">
+            <h3>Never Skip the End Tag</h3>
+            <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+            <h4>Example :</h4>
+            <img src="htmlpics/Picture20.png" alt="error">
+            <h3>Empty HTML Elements</h3>
+            <p>HTML elements with no content are called empty elements.<br>The <strong class="tag">&lt;br&gt;</strong> tag defines a line break, and is an empty element without a closing tag:</p>
+            <img src="htmlpics/Picture21.png" alt="error">
+        </div>
+
+        <h1 class="head" id="paragraphs">HTML Paragraphs</h1>
+        <div class="content">
+            <p class="mean">A paragraph always starts on a new line, and is usually a block of text.</p>
+            <h3>HTML Paragraphs</h3>
+            <p>The HTML <strong class="tag">&lt;p&gt;</strong> element defines a paragraph.<br>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+            <img src="htmlpics/Picture22.png" alt="error">
+            <h3>HTML Display</h3>
+            <p>You cannot be sure how HTML will be displayed.<br>Large or small screens, and resized windows will create different results.<br> HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.<br>The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+            <h4>Example:</h4>
+            <img src="htmlpics/Picture23.png" alt="error">
+            <h3>HTML Horizontal Rules</h3>
+            <p>The <strong class="tag">&lt;hr&gt;</strong> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.<br>The <strong class="tag">&lt;hr&gt;</strong> element is used to separate content (or define a change) in an HTML page:</p>
+            <img src="htmlpics/Picture24.png" alt="error">
+            <h3>HTML Line Breaks</h3>
+            <p>The HTML <strong class="tag">&lt;br&gt;</strong> element defines a line break.<br>Use <strong class="tag">&lt;br&gt;</strong> if you want a line break (a new line) without starting a new paragraph :</p>
+            <img src="htmlpics/Picture25.png" alt="error">
+        </div>   
+        
+        <h1 class="head" id="styles">HTML Styles</h1>
+        <div class="content">   
+            <p class="mean">The HTML style attribute is used to add styles to an element, such as color, font, size, and more.</p>
+            <h3>The HTML Style Attribute</h3>
+            <p>Setting the style of an HTML element, can be done with the style attribute.<br>The HTML style attribute has the following syntax:</p>
+            <img src="htmlpics/Picture26.png" alt="error">
+            <h3>Background Color</h3>
+            <p>The CSS background-color property defines the background color for an HTML element.</p>
+            <h4>Example:</h4>
+            <img src="htmlpics/Picture27.png" alt="error">
+            <h3>Text Color</h3>
+            <p>The CSS color property defines the text color for an HTML element:</p>
+            <img src="htmlpics/Picture28.png" alt="error">
+            <h3>Fonts</h3>
+            <p>The CSS font-family property defines the font to be used for an HTML element:</p>
+            <img src="htmlpics/Picture29.png" alt="error">
+            <h3>Text Size</h3>
+            <p>The CSS font-size property defines the text size for an HTML element:</p>
+            <img src="htmlpics/Picture30.png" alt="error">
+            <h3>Text Alignment</h3>
+            <p>The CSS text-align property defines the horizontal text alignment for an HTML element:</p>
+            <img src="htmlpics/Picture31.png" alt="error">
+        </div>
+
+        <h1 class="head" id="colors">HTML Colors</h1>
+        <div class="content">
+            <p class="mean">HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+            <h3>Background Color</h3>
+            <p>You can set the background color for HTML elements:</p>
+            <img src="htmlpics/Picture32.png" alt="error">
+            <h3>Text Color</h3>
+            <p>You can set the color of text:</p>
+            <img src="htmlpics/Picture33.png" alt="error">
+            <h3>Border Color</h3>
+            <p>You can set the color of borders:</p>
+            <img src="htmlpics/Picture34.png" alt="error">
+            <h3>HTML Links</h3>
+            <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+            <h3>HTML Links - Hyperlinks</h3>
+            <p>HTML links are hyperlinks.<br>You can click on a link and jump to another document.<br>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+            <h3>HTML Links - Syntax</h3>
+            <p>The HTML <strong class="tag">&lt;a&gt;</strong> tag defines a hyperlink. It has the following syntax:</p>
+            <img src="htmlpics/Picture35.png" alt="error">
+            <p>The most important attribute of the <a> element is the href attribute, which indicates the link's destination.<br>The link text is the part that will be visible to the reader.<br>Clicking on the link text, will send the reader to the specified URL address.</p>
+        </div>
+        
+        <h1 class="head" id="images">HTML Images</h1>
+        <div class="content">          
+            <p class="mean">Images can improve the design and the appearance of a web page.</p>
+            <img src="htmlpics/Picture36.png" alt="error">
+            <h3>Image Size - Width and Height</h3>
+            <p>You can use the style attribute to specify the width and height of an image.</p>
+            <img src="htmlpics/Picture37.png" alt="error">
+            <h3>Width and Height, or Style?</h3>
+            <p>The width, height, and style attributes are all valid in HTML.<br>However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:</p>
+            <img src="htmlpics/Picture38.png" alt="error">
+            <h3>HTML Tables</h3>
+            <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+            <img src="htmlpics/Picture39.png" alt="error">
+            <h3>Define an HTML Table</h3>
+            <p>A table in HTML consists of table cells inside rows and columns.</p>
+            <h4>Example :</h4>
+            <img src="htmlpics/Picture40.png" alt="error">
+            <h3>Table Cells</h3>
+            <p>Each table cell is defined by a <strong class="tag">&lt;td&gt;</strong> and a <strong class="tag">&lt;/td&gt;</strong> tag.<br> <strong class="tag">td</strong> stands for table data.<br>Everything between<strong class="tag">&lt;td&gt;</strong> and <strong class="tag">&lt;/td&gt;</strong> are the content of the table cell.</p>
+            <img src="htmlpics/Picture41.png" alt="error">
+            <h3>Table Rows</h3>
+            <p>Each table row starts with a <strong class="tag">&lt;tr&gt;</strong> and ends with a <strong class="tag">&lt;/tr&gt;</strong> tag.</p>
+            <img src="htmlpics/Picture42.png" alt="error">
+        </div> 
+
+        <h1 class="head" id="lists">HTML Lists</h1>
+        <div class="content"> 
+            <p class="mean">HTML lists allow web developers to group a set of related items in lists.</p>
+            <h4>Example :</h4>
+            <p>An unordered HTML list:</p>
+            <div class="li">
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </div>
+            <p>An ordered HTML list:</p>
+            <div class="li">
+                <ol>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                    <li>Fourth Item</li>
+                </ol>
+            </div>
+            <h3>Unordered HTML List</h3>
+            <p>An unordered list starts with the <strong class="tag">&lt;ul&gt;</strong> tag. Each list item starts with the <strong class="tag">&lt;li&gt;</strong> tag.<br>The list items will be marked with bullets (small black circles) by default:</p>
+            <img src="htmlpics/Picture43.png" alt="error">
+            <h3>Ordered HTML List</h3>
+            <p>An ordered list starts with the <strong class="tag">&lt;ol&gt;</strong> tag. Each list item starts with the <strong class="tag">&lt;li&gt;</strong> tag.<br>The list items will be marked with numbers by default:</p>
+            <img src="htmlpics/Picture44.png" alt="error">
+        </div>
+
+        <h1 class="head" id="forms">HTML Forms</h1>
+        <div class="content">   
+            <p class="mean">An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+            <img src="htmlpics/Picture45.png" alt="error">
+            <h3>The &lt;form&gt; Element</h3>
+            <p>The HTML <strong class="tag">&lt;form&gt;</strong> element is used to create an HTML form for user input:</p>
+            <img src="htmlpics/Picture46.png" alt="error">
+            <p>The <strong class="tag">&lt;form&gt;</strong> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.<br>All the different form elements are covered in this chapter: HTML Form Elements.</p>
+            <h3>The &lt;input&gt; Element</h3>
+            <p>The HTML <strong class="tag">&lt;input&gt;</strong> element is the most used form element.<br>An <strong class="tag">&lt;input&gt;</strong> element can be displayed in many ways, depending on the type attribute.</p>
+            <h4>Here are some examples:</h4>
+            <img src="htmlpics/Picture47.png" alt="error">
+        </div>
+    </div>
+    
+    <div class="reference">
+        <ul>
+            <li class="first">
+                <img src="Pictures/logo.png" alt="error">
+                <p>The CompuTuro web page seeks to assist individuals, especially students, in efficiently accessing programming.</p>
+            </li>
+            <li class="second">
+                <h4>REFERENCE</h4>
+                <a href="https://www.w3schools.com/" target="_blank">www.w3schools.com</a>
+            </li>
+            <li class="third">
+                <h4>CONTACT US</h4>
+                <p>Barangay San Miguel<br>Nabua, Camarines Sur<br>Philippines</p><br>
+                <p><strong>Phone : </strong>+63 923 2323 323<br><strong>Email : </strong>bsit1f@gmail.com</p>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        <p><strong>&copy; 2022 by CompuTuro. | All rights reserved.</strong></p>
+    </div> 
+
+</body>
+
+</html>

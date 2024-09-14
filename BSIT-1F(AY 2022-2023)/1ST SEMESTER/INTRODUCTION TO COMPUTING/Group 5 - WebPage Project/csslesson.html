@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="csslesson.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    
+    <div class="banner">
+        <div class="logo">
+            <a href="home.html"><img src="Pictures/logo.png" alt="error"></a>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="htmllesson.html" >HTML</a></li>
+                <li><a href="csslesson.html" class="active">CSS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <div class="first">
+                <li><a href="#intro">CSS Introduction</a></li>
+                <li><a href="#syntax">CSS Syntax</a></li>
+                <li><a href="#how">CSS How To</a></li>
+                <li><a href="#colors">HTML Colors</a></li>
+                <li><a href="#borders">CSS Borders</a></li> 
+            </div>
+            <div class="second">    
+                <li><a href="#margins">CSS Margins</a></li>
+                <li><a href="#outline">CSS Outline</a></li>
+                <li><a href="#text">CSS Text</a></li>
+                <li><a href="#fonts">CSS Fonts</a></li>
+                <li><a href="#tables">CSS Tables</a></li>
+            </div>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="container">
+        <h1 class="head" id="intro">CSS Introduction</h1>
+        <div class="content">
+            <h3>What is CSS?</h3>
+            <ul>
+                <li>CSS stands for Cascading Style Sheets.</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+                <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</li>
+                <li>External stylesheets are stored in CSS files.</li>
+            </ul>
+            <h3>Why Use CSS?</h3>
+            <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+            <h3>CSS Solved a Big Problem</h3>
+            <p>HTML was NEVER intended to contain tags for formatting a web page!<br>HTML was created to describe the content of a web page, like :</p> 
+            <div class="li">
+                <p><strong class="tag">&lt;h1&gt;</strong> This is a heading <strong class="tag">&lt;/h1&gt;</strong></p>
+                <p><strong class="tag">&lt;p&gt;</strong> This is a paragraph. <strong class="tag">&lt;/p&gt;</strong></p>
+            </div>
+           <p>When tags like <strong class="tag">&lt;font&gt;</strong>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process. <br>To solve this problem, the World Wide Web Consortium (W3C) created CSS.<br>CSS removed the style formatting from the HTML page!</p>
+        </div>
+
+        <h1 class="head" id="syntax">CSS Syntax</h1>
+        <div class="content">
+            <p class="mean">A CSS rule consists of a selector and a declaration block.</p>
+            <img src="csspics/Picture1.png" alt="error">
+            <p>The selector points to the HTML element you want to style.<br>The declaration block contains one or more declarations separated by semicolons.<br>Each declaration includes a CSS property name and a value, separated by a colon.<br>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+            <h4>Example :</h4>
+            <p>In this example all <strong class="tag">&lt;p&gt;</strong> elements will be center-aligned, with a red text color :</p>
+            <img src="csspics/Picture2.png" alt="error">
+            <h4>Example Explained</h4>
+            <div class="li">
+                <ul>
+                    <li><strong class="tag">p</strong> is a selector in CSS (it points to the HTML element you want to style : <strong class="tag">&lt;p&gt;</strong> ).</li>
+                    <li><strong class="tag">color</strong> is a property, and <strong class="tag">red</strong> is the property value</li>
+                    <li><strong class="tag">text-align</strong> is a property, and <strong class="tag">center </strong>is the property value</li>
+                </ul>
+            </div>
+        </div>
+
+        <h1 class="head" id="how">CSS How To</h1>
+        <div class="content">
+            <p class="mean">When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+            <h3>Three Ways to Insert CSS</h3>
+            <p>There are three ways of inserting a style sheet :</p>
+            <div class="li">
+                <ul>
+                    <li>External CSS</li>
+                    <li>Internal CSS</li>
+                    <li>Inline CSS</li>
+                </ul>
+            </div>
+            <h3>External CSS</h3>
+            <p>With an external style sheet, you can change the look of an entire website by changing just one file!<br>Each HTML page must include a reference to the external style sheet file inside the <strong class="tag">&lt;link&gt;</strong> element, inside the head section.</p>
+            <h4>Example :</h4>
+            <p>External styles are defined within the <strong class="tag">&lt;link&gt;</strong> element, inside the <strong class="tag">&lt;head&gt;</strong> section of an HTML page:</p>
+            <img src="csspics/Picture3.png" alt="error">
+            <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.<br>The external .css file should not contain any HTML tags.<br>Here is how the "mystyle.css" file looks :</p>
+            <img src="csspics/Picture4.png" alt="error">
+            <h3>Internal CSS</h3>
+            <p>An internal style sheet may be used if one single HTML page has a unique style.<br>The internal style is defined inside the <strong class="tag">&lt;style&gt;</strong> element, inside the head section.</p>
+            <h4>Example :</h4>
+            <p>Internal styles are defined within the <strong class="tag">&lt;style&gt;</strong> element, inside the <strong class="tag">&lt;head&gt;</strong> section of an HTML page :</p>
+            <img src="csspics/Picture5.png" alt="error">
+            <h3>Inline CSS</h3>
+            <p>An inline style may be used to apply a unique style for a single element.<br>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+            <h4>Example :</h4>
+            <p>Inline styles are defined within the "style" attribute of the relevant element :</p>
+            <img src="csspics/Picture6.png" alt="error">
+        </div>
+
+        <h1 class="head" id="colors">HTML Colors</h1>
+        <div class="content">
+            <p class="mean">Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+            <h3>Background Color</h3>
+            <p>You can set the background color for HTML elements :</p>
+            <img src="csspics/Picture7.png" alt="error">
+            <h3>Text Color</h3>
+            <p>You can set the color of text :</p>
+            <img src="csspics/Picture8.png" alt="error">
+            <h3>Border Color</h3>
+            <p>You can set the color of borders :</p>
+            <img src="csspics/Picture9.png" alt="error">
+        </div>
+
+        <h1 class="head" id="borders">CSS Borders</h1>
+        <div class="content">
+            <p class="mean">The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+            <h3>CSS Border Style</h3>
+            <p>The <strong class="tag">border-style</strong>  property specifies what kind of border to display.<br>The following values are allowed :</p>
+            <div class="li">
+                <ul>
+                    <li><strong class="tag">dotted</strong> - Defines a dotted border</li>
+                    <li><strong class="tag">dashed</strong> - Defines a dashed border</li>
+                    <li><strong class="tag">solid</strong> - Defines a solid border</li>
+                    <li><strong class="tag">double</strong> - Defines a double border</li>
+                    <li><strong class="tag">groove</strong> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+                    <li><strong class="tag">ridge</strong> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+                    <li><strong class="tag">inset</strong> - Defines a 3D inset border. The effect depends on the border-color value</li>
+                    <li><strong class="tag">outset</strong> - Defines a 3D outset border. The effect depends on the border-color value</li>
+                    <li><strong class="tag">none</strong> - Defines no border</li>
+                    <li><strong class="tag">hidden</strong> - Defines a hidden border</li>
+                </ul>
+            </div>
+            <p>The <strong class="tag">border-style</strong> property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+            <h4>Example :</h4>
+            <p>Demonstration of the different border styles :</p>
+            <img src="csspics/Picture10.png" alt="error">
+            <h4>Result :</h4>
+            <img src="csspics/Picture11.png" alt="error">
+        </div>
+
+        <h1 class="head" id="margins">CSS Margins</h1>
+        <div class="content">
+            <p class="mean">Margins are used to create space around elements, outside of any defined borders.</p>
+            <h3>CSS Margins</h3>
+            <p>The CSS <strong class="tag">margin</strong> properties are used to create space around elements, outside of any defined borders.<br>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+            <h3>Margin - Individual Sides</h3>
+            <p>CSS has properties for specifying the margin for each side of an element :</p>
+            <div class="li">
+                <ul>
+                    <li><strong class="tag">margin-top</strong></li>
+                    <li><strong class="tag">margin-right</strong></li>
+                    <li><strong class="tag">marging-bottom</strong></li>
+                    <li><strong class="tag">margin-left</strong></li>
+                </ul>
+            </div>
+            <p>All the margin properties can have the following values :</p>
+            <div class="li">
+                <ul>
+                    <li><strong class="tag">auto</strong> - the browser calculates the margin</li>
+                    <li><strong class="tag">length</strong> - specifies a margin in px, pt, cm, etc.</li>
+                    <li><strong class="tag">%</strong> - specifies a margin in % of the width of the containing element</li>
+                    <li><strong class="tag">inherit</strong> - specifies that the margin should be inherited from the parent element</li>
+                </ul>
+            </div>
+            <p><strong>Tip :</strong> Negative values are allowed.</p>
+            <h4>Example :</h4>
+            <p>Set different margins for all four sides of a <p> element:</p>
+            <img src="csspics/Picture12.png" alt="error">
+            <h3>Margin - Shorthand Property</h3>
+            <p>To shorten the code, it is possible to specify all the margin properties in one property.<br>The <strong class="tag">margin</strong> property is a shorthand property for the following individual margin properties :</p>
+            <div class="li">
+                <ul>
+                    <li><strong class="tag">margin-top</strong></li>
+                    <li><strong class="tag">margin-right</strong></li>
+                    <li><strong class="tag">marging-bottom</strong></li>
+                    <li><strong class="tag">margin-left</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1 class="head" id="outline">CSS Outline</h1>
+        <div class="content">
+            <p class="mean">An outline is a line drawn outside the element's border.</p>
+            <h3>CSS Outline</h3>
+            <p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".<br>CSS has the following outline properties :</p>
+            <div class="li">
+                <ul>
+                    <li><strong class="tag">outline-style</strong></li>
+                    <li><strong class="tag">outline-color</strong></li>
+                    <li><strong class="tag">outline-wdith</strong></li>
+                    <li><strong class="tag">outline-offset</strong></li>
+                    <li><strong class="tag">outline</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1 class="head" id="text">CSS Text</h1>
+        <div class="content">
+            <p class="mean">CSS has a lot of properties for formatting text.</p>
+            <h3>Text Color</h3>
+            <p>The <strong class="tag">color</strong> property is used to set the color of the text. The color is specified by:</p>
+            <div class="li">
+                <ul>
+                    <li>a color name - like "red"</li>
+                    <li>a HEX value - like "#ff0000"</li>
+                    <li>an RGB value - like "rgb(255,0,0)"</li>
+                </ul>
+            </div>
+            <p>The default text color for a page is defined in the body selector.</p>
+            <h4>Example :</h4>
+            <img src="csspics/Picture13.png" alt="error">
+            <h3>Text Color and Background Color</h3>
+            <p>In this example, we define both the <strong class="tag">background-color</strong> property and the <strong class="tag">color</strong> property :</p>
+            <img src="csspics/Picture14.png" alt="error">
+        </div>
+
+        <h1 class="head" id="fonts">CSS Fonts</h1>
+        <div class="content">
+            <p class="mean">Choosing the right font for your website is important!</p>
+            <h3>Font Selection is Important</h3>
+            <p>Choosing the right font has a huge impact on how the readers experience a website.<br>The right font can create a strong identity for your brand.<br>Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.</p>
+            <h3>Generic Font Families</h3>
+            <p>In CSS there are five generic font families :</p>
+            <div class="li">
+                <ol>
+                    <li>Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.</li>
+                    <li>Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.</li>
+                    <li>Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. </li>
+                    <li>Cursive fonts imitate human handwriting.</li>
+                    <li>Fantasy fonts are decorative/playful fonts.</li>
+                </ol>
+            </div>
+            <p>All the different font names belong to one of the generic font families. </p>
+        </div>
+
+        <h1 class="head" id="tables">CSS Tables</h1>
+        <div class="content">
+            <p class="mean">The look of an HTML table can be greatly improved with CSS :</p>
+            <img src="csspics/Picture15.png" alt="error">
+            <h3>Table Borders</h3>
+            <p>To specify table borders in CSS, use the border property.<br>The example below specifies a solid border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements :</p>
+            <h4>Example :</h4>
+            <img src="csspics/Picture16.png" alt="error">
+        </div>
+    </div>
+
+    <div class="reference">
+        <ul>
+            <li class="first">
+                <img src="Pictures/logo.png" alt="error">
+                <p>The CompuTuro web page seeks to assist individuals, especially students, in efficiently accessing programming.</p>
+            </li>
+            <li class="second">
+                <h4>REFERENCE</h4>
+                <a href="https://www.w3schools.com/" target="_blank">www.w3schools.com</a>
+            </li>
+            <li class="third">
+                <h4>CONTACT US</h4>
+                <p>Barangay San Miguel<br>Nabua, Camarines Sur<br>Philippines</p><br>
+                <p><strong>Phone : </strong>+63 923 2323 323<br><strong>Email : </strong>bsit1f@gmail.com</p>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        <p><strong>&copy; 2022 by CompuTuro. | All rights reserved.</strong></p>
+    </div> 
+    
+</body>
+</html>

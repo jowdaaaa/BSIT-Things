@@ -1,0 +1,57 @@
+/*EXTERNAL STYLESHEET*/
+* {
+    border: 1px solid red;
+}
+
+p {
+    color: green;
+}
+
+.title {
+    color: teal;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+#article-title {
+    font-family: cursive;
+}
+
+h1 {
+    color: maroon;
+}
+
+a[href*='florence'] {
+    color: lightgreen;
+}
+
+a[href*='beijing'] {
+    color: lightblue;
+}
+
+a[href*='seoul'] {
+    color: lightpink;
+}
+
+a {
+
+}
+
+a:hover {
+    color: darkorange;
+}
+
+#publish-time {
+    color: gray;
+}
+
+h2 {
+    background-color: aqua;
+}
+
+h5 {
+    color: blue;
+}
+

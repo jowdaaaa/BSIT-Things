@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Tables</title>
+
+        <style>
+            table,tr,th,td {
+                border-width: 2px;
+                border-color: darkblue;
+                border-style: solid;
+                text-align: center;
+            }
+        
+            caption {
+                text-align: center;
+                caption-side: top;
+            }
+
+            thead {
+                background-color: blue;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <!--            Tables Element              -->
+        <!--
+            <table> tags are used in combination with other elements like <tr>, <td>, <th> and etc..
+        -->
+        <h3>Simple structure of table</h3>
+        <!--
+            *row(tr) - pahiga
+            *column(td) - patayo
+            *<th> - heading/bold text
+        -->
+        <table>
+            <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Title 3</th>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+            </tr>
+        </table> 
+
+        <!--         <th>&<td> Element attribute
+            *colspan - specifies the column span of the cell
+            *rowspan - specifies the row span of the cell
+        -->
+        <h3>With rowspan and colspan</h3>
+        <table>
+            <tr>
+                <th rowspan="2">Names</th>
+                <th colspan="2">Subjects</th>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>Jaymar</td>
+                <td>94</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Remarks :</td>
+                <th colspan="2">VERY GOOD!</th>
+            </tr>
+        </table>
+        
+        <!--              Caption Element               -->
+        <!--
+            <caption> tags by default are centered aligned and on the opt of the table,
+            it can be customized using CSS.
+        -->
+        <h3>Caption Elements</h3>
+        <table>
+            <caption>Caption</caption>
+            <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Title 3</th>
+            </tr>
+            <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+            </tr>
+        </table>
+
+        <!--
+                    Other Table Tags
+            *<colgroup> - specifies a group of one or more columns in a table of formatting
+            *<col> - specifies column properties for each column within a <colgroup> element
+            *<thead> - groups the header content in a table
+            *<tbody> - groups the body content in a table
+            *<tfoot> - groups the footer content in a table
+        -->
+        <h3>Other Table Tags</h3>
+        <table>
+            <caption>Grades</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Names</th>
+                    <th colspan="3">Subjects</th>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Java</td>
+                    <td>C#</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jaymar</td>
+                    <td>94</td>
+                    <td>92</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>James</td>
+                    <td>94</td>
+                    <td>92</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>Hatdog</td>
+                    <td>94</td>
+                    <td>92</td>
+                    <td>98</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Congrats!</td>
+                </tr>
+            </tfoot>
+        </table>
+    
+
+
+
+    </body>
+
+</html>

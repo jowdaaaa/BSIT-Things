@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: montserrat;
+    font-size: 15px;
+    background-image: url(bg.jpg);
+    background-size: 100%;
+}
+
+@font-face {
+    font-family: billabong;
+    src: url(billabong.ttf);
+    font-weight: bold;
+}
+
+h1 {
+    font-family: billabong;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0px 0px 5px rgb(176, 176, 176);
+    margin-top: 30px;
+    color: white;
+}
+
+form {
+    margin: auto;
+    width: 35%;
+    background-color: #c2c2c2;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px rgb(154, 154, 154);
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+form div {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    padding: 15px;
+    right: 60px;
+}
+
+.success {
+    color: green;
+}
+
+.failure {
+    color: red;
+}
+
+.success, .failure {
+    opacity: 0;
+}
+
+.label {
+    padding: 0px 5px;
+    position: absolute;
+    left: 75px;
+    color: #000000;
+    pointer-events: none;
+    transform: translateY(-10px);
+    background-color: #c2c2c2;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input {
+    border: solid 1.5px #000000;
+    border-radius: 20px;
+    background: none;
+    padding: 12px 20px;
+    color: #000000;
+    transition: 0.4s ease-in-out;
+    outline: none;
+    width: 70%;
+    font-size: 18px;
+}
+
+input:focus {
+    border-color: rgb(255, 255, 255);
+    color: rgb(65, 65, 65);
+}
+input:focus ~ .label{
+    color: #000000;
+}
+
+.fill {
+    padding-bottom: 20px;
+}   
+
+.error {
+    text-align: left;
+    left: 80px;
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    width: 370px;
+}
+
+.select {
+    margin-top: -10px;
+    margin-bottom: 23px;
+}
+
+.select label {
+    color: #000000;
+    font-weight: bold;
+}
+
+.select select {
+    border-radius: 20px;
+    padding: 2px;
+    background-color: #52525293;
+    border: none;
+    color: rgb(224, 224, 224);
+    outline: none;
+    width: 25%;
+    text-align: center;
+}
+
+.sel {
+    text-align: center;
+    color: red;
+    font-size: 12px;
+}
+
+button {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 0px rgb(0, 81, 13);
+    padding: 10px 50px;
+    border-radius: 60px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-weight: bolder;
+    color: rgb(0, 81, 13);
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover {
+    transform: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 0px 0px 5px rgb(0, 60, 0);
+    background-color: rgba(0, 157, 0, 0.074);
+    color: rgba(1, 72, 19, 0.532);
+    transition: 0.3s;
+}

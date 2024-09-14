@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Task</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 0;
+            font-family: montserrat;
+            background-color: rgb(126, 126, 126);
+        }
+        table {
+            background-color: aliceblue;
+            border: 3px solid rgb(78, 79, 79);
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0px 0px 5px;
+        }
+
+        td {
+            padding: 0px 20px 0px 20px;
+        }
+
+        img {
+            width: 200px;
+            box-shadow: 5px 5px 10px black;
+            transition: 0.5s ease-in-out;
+        }
+
+        img:hover {
+            width: 210px;
+        }
+        
+        .hobbies ul li{
+            display:inline-table;
+            box-shadow: 5px 5px 5px;
+        } 
+
+        video {
+            width: 450px;
+            height: 200px;
+            transition: 0.3s ease-in;
+            border: 1px solid rgb(2, 2, 114);
+            cursor: pointer;
+        }
+
+        video:hover {
+            height: 210px;
+        }
+
+        .message {
+            text-align: right;
+        } 
+
+        button {
+            margin: 30px;
+            margin-left: 450px;
+            width: 200px;
+            padding: 8px 20px;
+            border: none;
+            background-color: rgb(2, 2, 114);
+            color: aliceblue;
+            border-radius: 20px;
+            border: 1px solid rgb(2, 2, 114);
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+
+        button:hover {
+            border: 1px solid rgb(2, 2, 114);
+            background-color: white;
+            color: rgb(2, 2, 114);
+        }
+
+        .form {
+            margin-top: 0;
+        }
+
+        input {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+            padding: 5px 5px;
+        }
+
+        textarea {
+            margin-top: 5px;
+            margin-left: 20px;
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="5px">
+        <tr>
+            <th rowspan="2">
+                <a href="https://www.facebook.com/PauloL.01"><img src="me.jpg" alt="error"></a>
+            </th>
+            <th>
+                <h1>VIÑAS, JUDAH PAULO LL.</h1>
+                <h3>BS in Information Technology, 1st Year, 1F</h3>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p><strong>Contact No. : </strong><u>09519814518</u> | <strong>Email : </strong><u>juvinas@my.cspc.edu.ph</p></u>
+                <p><strong>Address : </strong><u>Sta. Lucia, Nabua, Camarines Sur</u></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3>About Myself :</h3>
+                <ul>
+                    <li>I'm the type of person that will not give up until I get what I want.</li>
+                    <li>I am a shy or introverted person.</li>
+                    <li>I'm the person that won't talk unless you talk to me first; I don't know why, but I guess it's because I don't know how to start a conversation hahaha LOL.</li>
+                    <li>I am the person that has a lot of goals that I want to achieve.</li>
+                    <li>A crybaby or just a highly sensitive person(?)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr class="hobbies">
+            <td colspan="2" >
+               <h3>My Hobbies : </h3> 
+               <ul >
+                    <li>
+                        <video controls>
+                            <source src="hobby1.mp4" type="audio/mp4">
+                        </video>
+                    </li>
+                    <li>
+                        <video controls>
+                            <source src="hobby2.mp4" type="audio/mp4">
+                        </video>
+                    </li>
+                    <li>
+                        <video controls>
+                            <source src="hobby3.mp4" type="audio/mp4">
+                        </video>
+                    </li>
+               </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p><strong>1st Video : </strong>I love playing badminton with my family or friends.</p>
+                <p><strong>2nd Video : </strong>Watching Anime is something I always do.</p>
+                <p><strong>3rd Video : </strong>Yes, I enjoy music, but not singing; I prefer listening.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>MESSAGE ME</h3>
+                <div class="message">
+                    <p>Form :</p>
+                    <p>To :</p>
+                    <p>Message</p>
+                    <br><br><br><br><br><br>
+                </div>
+            </td>
+            <td>
+                <div class="form">
+                <input type="email" placeholder="Enter Email"><br>
+                <input type="email" placeholder="Enter Email"><br>
+                <textarea>Message Here...</textarea>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button>SUBMIT</button>
+            </td>
+        </tr> 
+    </table>
+</body>
+</html>
