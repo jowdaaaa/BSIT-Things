@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+
+<book_list xmlns="https://www.javajeff.ca/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="JudahPauloVinas_book_list.xsd">
+            
+    <book>
+        <title author="Tim Winton">Cloudstreet</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/343881.Cloudstreet]]></ebook>
+        <publisher>McPhee Gribble</publisher>
+        <language>English</language>
+        <pages>426</pages>
+    </book>
+    <book>
+        <title author="Christos Tsiolkas">The Slap</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/5396496-the-slap?from_search=true&from_srp=true&qid=NqBOrdbAxu&rank=1]]></ebook>
+        <publisher>Allen &amp; Row</publisher>
+        <language>English</language>
+        <pages>484</pages>
+    </book>
+    <book>
+        <title author="Thomas Keneally">Schindler's Ark</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/268302.Schindler_s_Ark?from_search=true&from_srp=true&qid=5aWSbXI3At&rank=1]]></ebook>
+        <publisher>Hoddler &amp; Stoughton</publisher>
+        <language>English</language>
+        <pages>400</pages>
+    </book>
+    <book>
+        <title author="Liane Moriarty">Big Little Lies</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/19486412-big-little-lies]]></ebook>
+        <publisher>Penguin Group</publisher>
+        <language>English</language>
+        <pages>460</pages>
+    </book>
+    <book>
+        <title author="Peter Carey">Oscar and Lucinda</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/187518.Oscar_and_Lucinda]]></ebook>
+        <publisher>University of Queensland Press</publisher>
+        <language>English</language>
+        <pages>512</pages>
+    </book>
+    <book>
+        <title author="Marcus Zusak">The Thorn Birds</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/830.The_Thorn_Birds]]></ebook>
+        <publisher>Harper and Row</publisher>
+        <language>English</language>
+        <pages>692</pages>
+    </book>
+    <book>
+        <title author="Richard Flanagan">The Book Thief</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/19063.The_Book_Thief]]></ebook>
+        <publisher>Picador</publisher>
+        <language>English</language>
+        <pages>552</pages>
+    </book>
+    <book>
+        <title author="Hannah Kent">The Narrow Road to the Deep North</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/17333223-the-narrow-road-to-the-deep-north]]></ebook>
+        <publisher>Knopf</publisher>
+        <language>English</language>
+        <pages>464</pages>
+    </book>
+    <book>
+        <title author="Hannah Kent">Burial Rites</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/18273332-burial-rites]]></ebook>
+        <publisher>Little, Brown and Company</publisher>
+        <language>English</language>
+        <pages>336</pages>
+    </book>
+    <book>
+        <title author="David Malouf">Remembering Babylon</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/46161.Remembering_Babylon]]></ebook>
+        <publisher>Chatto and Windus</publisher>
+        <language>English</language>
+        <pages>213</pages>
+    </book>
+    <book>
+        <title author="Geraldine Brooks">March</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/6365.March]]></ebook>
+        <publisher>Viking</publisher>
+        <language>English</language>
+        <pages>280</pages>
+    </book>
+    <book>
+        <title author="David Marr">Patrick White: A Life</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/19976.Patrick_White]]></ebook>
+        <publisher>Random House</publisher>
+        <language>English</language>
+        <pages>736</pages>
+    </book>
+    <book>
+        <title author="Tara June Winch">The Yield</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/40220035-the-yield]]></ebook>
+        <publisher>Hamish Hamillton</publisher>
+        <language>English</language>
+        <pages>352</pages>
+    </book>
+    <book>
+        <title author="Kate Grenville">The Secret River</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/13907.The_Secret_River]]></ebook>
+        <publisher>Canongate Books</publisher>
+        <language>English</language>
+        <pages>334</pages>
+    </book>
+    <book>
+        <title author="Joan Lindsay">Picnic at Hanging Rock</title>
+        <ebook><![CDATA[https://www.goodreads.com/book/show/291507.Picnic_at_Hanging_Rock]]></ebook>
+        <publisher>Cheshire Publishing</publisher>
+        <language>English</language>
+        <pages>212</pages>
+    </book>
+</book_list>
