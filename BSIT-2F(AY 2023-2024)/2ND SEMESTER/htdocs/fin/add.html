@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <style>
+        .add-container {
+            width: 50%;
+            margin: 50px auto;
+        }
+
+        .add-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="add-container">
+        <h1>Add Task</h1>
+        <form action="add.php" method="POST" class="add-form">
+            <label for="title">Task Title:</label>
+            <input type="text" name="title" required><br>
+            <label for="description">Task Description:</label>
+            <input type="text" name="description" required><br>
+            <label for="date">Task Date:</label>
+            <input type="date" name="date" required><br>
+            <label for="time">Task Time:</label>
+            <input type="time" name="time" required><br>
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+</body>
+</html>
