@@ -66,20 +66,24 @@ SELECT * FROM emp_details;
 SELECT emp_fname, emp_lname, park_name FROM emp_details;
 
 -- E6.6
+drop table sales;
 CREATE TABLE sales (
-	park_name VARCHAR(20),
-    `min(line_price)` DECIMAL(10, 2),
-    `max(line_price)` DECIMAL(10, 2)
+	park_name varchar(20),
+    line_price decimal(10.2)
 );
 
-INSERT INTO sales(park_name, `min(line_price)`, `max(line_price)`) VALUE ("FairyLand", "14.99", "139.96");
-INSERT INTO sales(park_name, `min(line_price)`, `max(line_price)`) VALUE ("GoldTown", "12.12", "114.68");
-INSERT INTO sales(park_name, `min(line_price)`, `max(line_price)`) VALUE ("PleasureLand", "21.98", "168.40");
+INSERT INTO sales(park_name, line_price) VALUE ("FairyLand", 14.99);
+INSERT INTO sales(park_name, line_price) VALUE ("FairyLand", 139.96);
+INSERT INTO sales(park_name, line_price) VALUE ("GoldTown", 12.12);
+INSERT INTO sales(park_name, line_price) VALUE ("GoldTown", 114.68);
+INSERT INTO sales(park_name, line_price) VALUE ("PleasureLand", 21.98);
+INSERT INTO sales(park_name, line_price) VALUE ("PleasureLand", 168.40);
 SELECT * FROM sales;
 
 CREATE VIEW ticket_sales AS
-SELECT *
-FROM sales;
+SELECT park_name, min(line_price) AS `min(line_price)`, max(line_price) AS `max(line_price)`, ROUND(AVG(line_price), 2) AS avg_price
+FROM sales
+GROUP BY park_name;
 SELECT * FROM ticket_sales;
 
 -- E6.7
@@ -99,8 +103,6 @@ SELECT emp_fname, emp_lname, emp_bod FROM employee WHERE DATE_FORMAT(emp_bod, '%
 
 -- E6.10
 SELECT emp_fname, emp_lname, CONCAT(SUBSTR(emp_phone, 1, 3), LOWER(SUBSTR(emp_fname, 1, 2))) AS user_password FROM employee; 
-
-
 
 
 
