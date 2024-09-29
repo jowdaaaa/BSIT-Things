@@ -25,47 +25,537 @@ public class StudentManagement extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        header = new javax.swing.JPanel();
+        logo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        personal = new javax.swing.JPanel();
+        jTextField16 = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        jTextField17 = new javax.swing.JTextField();
+        jComboBox16 = new javax.swing.JComboBox<>();
+        jLabel27 = new javax.swing.JLabel();
+        jComboBox17 = new javax.swing.JComboBox<>();
+        jComboBox18 = new javax.swing.JComboBox<>();
+        jLabel28 = new javax.swing.JLabel();
+        jTextField18 = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        jComboBox19 = new javax.swing.JComboBox<>();
+        jLabel30 = new javax.swing.JLabel();
+        jTextField19 = new javax.swing.JTextField();
+        jComboBox20 = new javax.swing.JComboBox<>();
+        jLabel31 = new javax.swing.JLabel();
+        jTextField20 = new javax.swing.JTextField();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        account = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jPasswordField2 = new javax.swing.JPasswordField();
+        jLabel11 = new javax.swing.JLabel();
+        jPasswordField3 = new javax.swing.JPasswordField();
+        jTextField2 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        contact = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jTextField11 = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        jTextField15 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        jTextField21 = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
+        jTextField22 = new javax.swing.JTextField();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jTextField13 = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jTextField14 = new javax.swing.JTextField();
+        jLabel19 = new javax.swing.JLabel();
+        jTextField12 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 249, 221));
+        header.setBackground(new java.awt.Color(248, 199, 148));
+        header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic1.png"))); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic1.png"))); // NOI18N
+        header.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
 
-        jLabel1.setText("Jose Rizal State College");
+        jLabel1.setFont(new java.awt.Font("Rockwell", 0, 15)); // NOI18N
+        jLabel1.setText("Manila, Philippines");
+        jLabel1.setAlignmentY(0.0F);
+        header.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, -1, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addContainerGap(205, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabel1)))
-                .addContainerGap(416, Short.MAX_VALUE))
-        );
+        jLabel3.setFont(new java.awt.Font("Rockwell", 0, 15)); // NOI18N
+        jLabel3.setText("Jose Rizal State College");
+        jLabel3.setAlignmentY(0.0F);
+        header.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 480));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("STUDENT MANAGEMENT INFORMATION SYSTEM ");
+        header.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 20, 340, 30));
+
+        getContentPane().add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 70));
+
+        personal.setBackground(new java.awt.Color(255, 242, 215));
+        personal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField16.setToolTipText("");
+        jTextField16.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jTextField16.setName(""); // NOI18N
+        jTextField16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField16ActionPerformed(evt);
+            }
+        });
+        personal.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 260, -1));
+
+        jLabel26.setText("LAST NAME");
+        personal.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, 20));
+
+        jTextField17.setToolTipText("");
+        jTextField17.setName(""); // NOI18N
+        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField17ActionPerformed(evt);
+            }
+        });
+        personal.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 150, -1));
+
+        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        jComboBox16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox16ActionPerformed(evt);
+            }
+        });
+        personal.add(jComboBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, -1, -1));
+
+        jLabel27.setText("BIRTH DATE");
+        personal.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, 20));
+
+        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
+        jComboBox17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox17ActionPerformed(evt);
+            }
+        });
+        personal.add(jComboBox17, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 100, -1));
+
+        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gender", "Male", "Female" }));
+        jComboBox18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox18ActionPerformed(evt);
+            }
+        });
+        personal.add(jComboBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 90, -1));
+
+        jLabel28.setText("FIRST NAME");
+        personal.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, -1, 20));
+
+        jTextField18.setToolTipText("");
+        jTextField18.setName(""); // NOI18N
+        jTextField18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField18ActionPerformed(evt);
+            }
+        });
+        personal.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 260, -1));
+
+        jLabel29.setText("CITIZENSHIP");
+        personal.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, -1, 20));
+
+        jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Year", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015" }));
+        jComboBox19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox19ActionPerformed(evt);
+            }
+        });
+        personal.add(jComboBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, -1, -1));
+
+        jLabel30.setText("COURSE");
+        personal.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, 20));
+
+        jTextField19.setToolTipText("");
+        jTextField19.setName(""); // NOI18N
+        jTextField19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField19ActionPerformed(evt);
+            }
+        });
+        personal.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 180, -1));
+
+        jComboBox20.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Year", "1st", "2nd", "3rd", "4th" }));
+        jComboBox20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox20ActionPerformed(evt);
+            }
+        });
+        personal.add(jComboBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 70, -1));
+
+        jLabel31.setText("STUDENT NUMBER");
+        personal.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, 20));
+
+        jTextField20.setToolTipText("");
+        jTextField20.setName(""); // NOI18N
+        jTextField20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField20ActionPerformed(evt);
+            }
+        });
+        personal.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 120, -1));
+
+        jCheckBox4.setText("Foreigner");
+        jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox4ActionPerformed(evt);
+            }
+        });
+        personal.add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, -1, 20));
+
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/personal-information.png"))); // NOI18N
+        jLabel32.setText("PERSONAL INFORMATION -------------------------");
+        personal.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, -1, -1));
+
+        jLabel4.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel4.setText("REMINDER : Confirm that all the provided information is true and correct.");
+        personal.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 390, -1));
+
+        getContentPane().add(personal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 430, 520));
+
+        account.setBackground(new java.awt.Color(255, 242, 215));
+        account.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.setToolTipText("");
+        jTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jTextField1.setName(""); // NOI18N
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        account.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 210, -1));
+
+        jLabel5.setText("PASSWORD");
+        account.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, 20));
+
+        jLabel6.setText("RETYPE PASSWORD");
+        account.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, 20));
+
+        jLabel8.setText("EMAIL");
+        account.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, 20));
+
+        jLabel10.setText("QUESTION ANSWER");
+        account.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, -1, 20));
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mail-recipient.png"))); // NOI18N
+        jLabel12.setText("ACCOUNT INFORMATION --------------------------");
+        account.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
+        account.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 260, -1));
+
+        jLabel11.setText("SECURITY QUESTION");
+        account.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, 20));
+        account.add(jPasswordField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, 220, -1));
+
+        jTextField2.setToolTipText("");
+        jTextField2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jTextField2.setName(""); // NOI18N
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        account.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 260, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        account.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 210, 70));
+
+        getContentPane().add(account, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 430, 520));
+
+        contact.setBackground(new java.awt.Color(255, 242, 215));
+        contact.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel7.setText("PROVINCE");
+        contact.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, 20));
+
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel14.setText("HOME ADDRESS");
+        contact.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, 20));
+
+        jTextField8.setToolTipText("");
+        jTextField8.setName(""); // NOI18N
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 260, -1));
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/contacts-book.png"))); // NOI18N
+        jLabel18.setText("CONTACT INFORMATION -------------------------");
+        contact.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
+
+        jLabel9.setText("CITY/MUNICIPAL");
+        contact.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, 20));
+
+        jTextField11.setToolTipText("");
+        jTextField11.setName(""); // NOI18N
+        jTextField11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField11ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 230, -1));
+
+        jLabel20.setText("BARANGAY");
+        contact.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 20));
+
+        jTextField15.setToolTipText("");
+        jTextField15.setName(""); // NOI18N
+        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField15ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 260, -1));
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel15.setText("PRESENT ADDRESS");
+        contact.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 20));
+
+        jLabel13.setText("PROVINCE");
+        contact.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, 20));
+
+        jTextField9.setToolTipText("");
+        jTextField9.setName(""); // NOI18N
+        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField9ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 260, -1));
+
+        jLabel16.setText("CITY/MUNICIPAL");
+        contact.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, 20));
+
+        jTextField21.setToolTipText("");
+        jTextField21.setName(""); // NOI18N
+        jTextField21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField21ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 230, -1));
+
+        jLabel23.setText("BARANGAY");
+        contact.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, 20));
+
+        jTextField22.setToolTipText("");
+        jTextField22.setName(""); // NOI18N
+        jTextField22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField22ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 260, -1));
+
+        jCheckBox1.setText("Same as home address");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+        contact.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, -1, -1));
+
+        jTextField13.setText("http://");
+        jTextField13.setToolTipText("");
+        jTextField13.setName(""); // NOI18N
+        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField13ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 240, -1));
+
+        jLabel21.setText("SOCIAL MEDIA");
+        contact.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, 20));
+
+        jLabel22.setText("ZIPCODE");
+        contact.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, 20));
+
+        jTextField14.setToolTipText("");
+        jTextField14.setName(""); // NOI18N
+        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField14ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 80, -1));
+
+        jLabel19.setText("CONTACT #");
+        contact.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, -1, 20));
+
+        jTextField12.setToolTipText("");
+        jTextField12.setName(""); // NOI18N
+        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField12ActionPerformed(evt);
+            }
+        });
+        contact.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 110, -1));
+
+        jButton1.setBackground(new java.awt.Color(0, 153, 0));
+        jButton1.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("SAVE");
+        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        contact.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, 90, 30));
+
+        jButton2.setBackground(new java.awt.Color(153, 0, 0));
+        jButton2.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("CLEAR");
+        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        contact.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 460, 90, 30));
+
+        getContentPane().add(contact, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 70, 420, 520));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8ActionPerformed
+
+    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField16ActionPerformed
+
+    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField17ActionPerformed
+
+    private void jComboBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox16ActionPerformed
+
+    private void jComboBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox17ActionPerformed
+
+    private void jComboBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox18ActionPerformed
+
+    private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField18ActionPerformed
+
+    private void jComboBox19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox19ActionPerformed
+
+    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField19ActionPerformed
+
+    private void jComboBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox20ActionPerformed
+
+    private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField20ActionPerformed
+
+    private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox4ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField11ActionPerformed
+
+    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField12ActionPerformed
+
+    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField13ActionPerformed
+
+    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField14ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField15ActionPerformed
+
+    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField9ActionPerformed
+
+    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField21ActionPerformed
+
+    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField22ActionPerformed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,8 +593,68 @@ public class StudentManagement extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel account;
+    private javax.swing.JPanel contact;
+    private javax.swing.JPanel header;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JComboBox<String> jComboBox16;
+    private javax.swing.JComboBox<String> jComboBox17;
+    private javax.swing.JComboBox<String> jComboBox18;
+    private javax.swing.JComboBox<String> jComboBox19;
+    private javax.swing.JComboBox<String> jComboBox20;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPasswordField jPasswordField2;
+    private javax.swing.JPasswordField jPasswordField3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField19;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
+    private javax.swing.JLabel logo;
+    private javax.swing.JPanel personal;
     // End of variables declaration//GEN-END:variables
 }
