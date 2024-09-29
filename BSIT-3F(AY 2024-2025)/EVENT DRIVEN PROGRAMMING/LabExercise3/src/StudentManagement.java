@@ -299,7 +299,7 @@ public class StudentManagement extends javax.swing.JFrame {
         contact.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setText("PROVINCE");
-        contact.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, 20));
+        contact.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, 20));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel14.setText("HOME ADDRESS");
@@ -312,7 +312,7 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField8ActionPerformed(evt);
             }
         });
-        contact.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 260, -1));
+        contact.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 260, -1));
 
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/contacts-book.png"))); // NOI18N
@@ -320,7 +320,7 @@ public class StudentManagement extends javax.swing.JFrame {
         contact.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
         jLabel9.setText("CITY/MUNICIPAL");
-        contact.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, 20));
+        contact.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 20));
 
         jTextField11.setToolTipText("");
         jTextField11.setName(""); // NOI18N
@@ -329,10 +329,10 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField11ActionPerformed(evt);
             }
         });
-        contact.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 230, -1));
+        contact.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 230, -1));
 
         jLabel20.setText("BARANGAY");
-        contact.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 20));
+        contact.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, 20));
 
         jTextField15.setToolTipText("");
         jTextField15.setName(""); // NOI18N
@@ -341,14 +341,14 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField15ActionPerformed(evt);
             }
         });
-        contact.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 260, -1));
+        contact.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 260, -1));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel15.setText("PRESENT ADDRESS");
         contact.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 20));
 
         jLabel13.setText("PROVINCE");
-        contact.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, 20));
+        contact.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, 20));
 
         jTextField9.setToolTipText("");
         jTextField9.setName(""); // NOI18N
@@ -357,10 +357,10 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField9ActionPerformed(evt);
             }
         });
-        contact.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 260, -1));
+        contact.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, 260, -1));
 
         jLabel16.setText("CITY/MUNICIPAL");
-        contact.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, 20));
+        contact.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, 20));
 
         jTextField21.setToolTipText("");
         jTextField21.setName(""); // NOI18N
@@ -369,10 +369,10 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField21ActionPerformed(evt);
             }
         });
-        contact.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 230, -1));
+        contact.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 230, -1));
 
         jLabel23.setText("BARANGAY");
-        contact.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, 20));
+        contact.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, 20));
 
         jTextField22.setToolTipText("");
         jTextField22.setName(""); // NOI18N
@@ -381,7 +381,7 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField22ActionPerformed(evt);
             }
         });
-        contact.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 260, -1));
+        contact.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 260, -1));
 
         jCheckBox1.setText("Same as home address");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -399,13 +399,13 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField13ActionPerformed(evt);
             }
         });
-        contact.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 240, -1));
+        contact.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 240, -1));
 
         jLabel21.setText("SOCIAL MEDIA");
-        contact.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, 20));
+        contact.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, 20));
 
         jLabel22.setText("ZIPCODE");
-        contact.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, 20));
+        contact.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, 20));
 
         jTextField14.setToolTipText("");
         jTextField14.setName(""); // NOI18N
@@ -414,10 +414,10 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField14ActionPerformed(evt);
             }
         });
-        contact.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 80, -1));
+        contact.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, 80, -1));
 
         jLabel19.setText("CONTACT #");
-        contact.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, -1, 20));
+        contact.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, 20));
 
         jTextField12.setToolTipText("");
         jTextField12.setName(""); // NOI18N
@@ -426,7 +426,7 @@ public class StudentManagement extends javax.swing.JFrame {
                 jTextField12ActionPerformed(evt);
             }
         });
-        contact.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 110, -1));
+        contact.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, 110, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 153, 0));
         jButton1.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
