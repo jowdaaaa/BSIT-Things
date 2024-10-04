@@ -5,3 +5,20 @@ Secret Key : 6LdsXFcqAAAAAJmxiaU0OwBdPAnjyzZ10RgfrPeH
 correct✅
 Site Key : 6LdMYlcqAAAAAEvNj7L7aKWQupYbZ4Y_IddX4785
 Secret Key : 6LdMYlcqAAAAAM37BPD-2d-P34Byy86ooPAnyCTa
+
+
+1. Username and Password Authentication ✅
+2. Multi-Factor Authentication (MFA)
+3. Social Login 
+4.Password Reset and Recovery
+5. Account Lockout Mechanism 
+6. Remember Me Functionality 
+7. Single Sign-On 
+8. Captcha or reCAPTCHA Integration ✅
+9. Session Management and Timeout ✅
+10. Login Activity Monitoring ✅
+11. Login Rate Limiting
+12. Security Questions (Optional)
+13. Passwordless Authentication 
+14. Device and Location Recognition 
+15. Two-Step Verification for Sensitive Actions
