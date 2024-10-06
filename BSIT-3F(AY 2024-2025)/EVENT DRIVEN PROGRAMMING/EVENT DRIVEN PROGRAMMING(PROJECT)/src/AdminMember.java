@@ -34,11 +34,43 @@ public class AdminMember extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -86,22 +118,204 @@ public class AdminMember extends javax.swing.JFrame {
         jLabel4.setText("MEMBER MANAGEMENT");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
+        jButton8.setBackground(new java.awt.Color(250, 250, 250));
+        jButton8.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 10)); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add.png"))); // NOI18N
+        jButton8.setText("ADD MEMBER");
+        jButton8.setBorder(null);
+        jButton8.setBorderPainted(false);
+        jButton8.setMargin(new java.awt.Insets(2, 10, 3, 10));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 5, 110, 30));
+
+        jPanel6.setBackground(new java.awt.Color(249, 249, 249));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel9.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel9.setText("Action");
+        jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel12.setText("ID");
+        jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel13.setText("No. of Prev. Loans");
+        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel15.setText("Active Loans");
+        jPanel6.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, -1, -1));
+
+        jLabel16.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel16.setText("1423");
+        jPanel6.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel17.setText("1");
+        jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, 10, -1));
+
+        jLabel18.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel18.setText("Maria Leonor");
+        jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel19.setText("2");
+        jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 10, -1));
+
+        jLabel20.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel20.setText("Melani Pasi");
+        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 70, -1));
+
+        jLabel21.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel21.setText("1");
+        jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel23.setText("2");
+        jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 10, -1));
+
+        jLabel24.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel24.setText("3");
+        jPanel6.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, 10, -1));
+
+        jLabel25.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel25.setText("2");
+        jPanel6.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 10, -1));
+
+        jLabel14.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel14.setText("Name");
+        jPanel6.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel22.setText("Lucas Gomez");
+        jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel26.setText("1231");
+        jPanel6.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel27.setText("4423");
+        jPanel6.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel28.setText("8742");
+        jPanel6.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel29.setText("Jose Marzo");
+        jPanel6.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 70, -1));
+
+        jLabel30.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel30.setText("1");
+        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 10, -1));
+
+        jLabel31.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel31.setText("1");
+        jPanel6.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, -1, -1));
+
+        jLabel32.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 10)); // NOI18N
+        jLabel32.setText("Juano Migel Lunatic");
+        jPanel6.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 120, -1));
+
+        jLabel33.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel33.setText("1234");
+        jPanel6.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+
+        jLabel34.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel34.setText("2");
+        jPanel6.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, -1, -1));
+
+        jLabel35.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jLabel35.setText("4");
+        jPanel6.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 10, -1));
+
+        jButton6.setBackground(new java.awt.Color(250, 250, 250));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        jButton6.setMargin(new java.awt.Insets(3, 0, 3, 0));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 30, 18));
+
+        jButton7.setBackground(new java.awt.Color(250, 250, 250));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        jButton7.setMargin(new java.awt.Insets(3, 0, 3, 0));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, 30, 18));
+
+        jButton9.setBackground(new java.awt.Color(250, 250, 250));
+        jButton9.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        jButton9.setMargin(new java.awt.Insets(3, 0, 3, 0));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 60, 30, 18));
+
+        jButton10.setBackground(new java.awt.Color(250, 250, 250));
+        jButton10.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        jButton10.setMargin(new java.awt.Insets(3, 0, 3, 0));
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 90, 30, 18));
+
+        jButton11.setBackground(new java.awt.Color(250, 250, 250));
+        jButton11.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        jButton11.setMargin(new java.awt.Insets(3, 0, 3, 0));
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, 30, 18));
+
+        jPanel2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 500, 190));
+
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, 520, 320));
 
         jPanel3.setBackground(new java.awt.Color(232, 238, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edit profile.png"))); // NOI18N
-        jButton1.setText("Member Management");
-        jButton1.setBorderPainted(false);
-        jButton1.setMargin(new java.awt.Insets(2, 0, 3, 0));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton4.setBackground(new java.awt.Color(250, 250, 250));
+        jButton4.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboard.png"))); // NOI18N
+        jButton4.setText("Dashboard");
+        jButton4.setBorderPainted(false);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButton4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 150, -1));
+        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 150, -1));
 
+        jButton2.setBackground(new java.awt.Color(250, 250, 250));
+        jButton2.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loan.png"))); // NOI18N
         jButton2.setText("Loan Management");
         jButton2.setAlignmentY(0.0F);
@@ -114,6 +328,21 @@ public class AdminMember extends javax.swing.JFrame {
         });
         jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 150, -1));
 
+        jButton1.setBackground(new java.awt.Color(250, 250, 250));
+        jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edit profile.png"))); // NOI18N
+        jButton1.setText("Member Management");
+        jButton1.setBorderPainted(false);
+        jButton1.setMargin(new java.awt.Insets(2, 0, 3, 0));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 150, -1));
+
+        jButton3.setBackground(new java.awt.Color(250, 250, 250));
+        jButton3.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logout.png"))); // NOI18N
         jButton3.setText("Logout");
         jButton3.setBorderPainted(false);
@@ -122,38 +351,52 @@ public class AdminMember extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 150, -1));
-
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboard.png"))); // NOI18N
-        jButton4.setText("Dashboard");
-        jButton4.setBorderPainted(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 150, -1));
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 150, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 190, 320));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -192,18 +435,50 @@ public class AdminMember extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     // End of variables declaration//GEN-END:variables
 }

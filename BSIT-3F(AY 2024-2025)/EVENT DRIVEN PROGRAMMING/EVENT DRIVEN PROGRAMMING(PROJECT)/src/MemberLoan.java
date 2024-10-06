@@ -30,14 +30,23 @@ public class MemberLoan extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel12 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -65,6 +74,63 @@ public class MemberLoan extends javax.swing.JFrame {
         jLabel4.setText("Loan Application");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel9.setText("Loan Term (Months)");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, -1, -1));
+
+        jTextField1.setName(""); // NOI18N
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 200, 30));
+        jTextField1.getAccessibleContext().setAccessibleName("");
+        jTextField1.getAccessibleContext().setAccessibleDescription("");
+
+        jLabel10.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 10)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel10.setText("Ex. 15000");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+
+        jComboBox1.setBackground(new java.awt.Color(255, 250, 250));
+        jComboBox1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "3 months", "6 months", "12 months" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, 130, 30));
+
+        jLabel11.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel11.setText("Purpose of Loan");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Microsoft YaHei", 0, 12)); // NOI18N
+        jLabel12.setText("Loan Amount (Maximum ₱15,000)");
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
+
+        jButton6.setBackground(new java.awt.Color(0, 153, 0));
+        jButton6.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("SUBMIT");
+        jButton6.setBorder(null);
+        jButton6.setBorderPainted(false);
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 100, 30));
+
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 510, 320));
 
         jPanel3.setBackground(new java.awt.Color(232, 238, 255));
@@ -73,12 +139,12 @@ public class MemberLoan extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/profile.png"))); // NOI18N
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
-        jLabel2.setText("User ID: 12345678");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 85, -1, -1));
-
+        jButton1.setBackground(new java.awt.Color(250, 250, 250));
+        jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edit profile.png"))); // NOI18N
         jButton1.setText("Account Settings");
         jButton1.setBorderPainted(false);
+        jButton1.setMargin(new java.awt.Insets(2, 0, 3, 0));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -86,6 +152,8 @@ public class MemberLoan extends javax.swing.JFrame {
         });
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 140, -1));
 
+        jButton2.setBackground(new java.awt.Color(250, 250, 250));
+        jButton2.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loan.png"))); // NOI18N
         jButton2.setText("Loan Application");
         jButton2.setAlignmentY(0.0F);
@@ -98,6 +166,8 @@ public class MemberLoan extends javax.swing.JFrame {
         });
         jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 140, -1));
 
+        jButton3.setBackground(new java.awt.Color(250, 250, 250));
+        jButton3.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/credit-card.png"))); // NOI18N
         jButton3.setText("Payments");
         jButton3.setBorderPainted(false);
@@ -108,6 +178,8 @@ public class MemberLoan extends javax.swing.JFrame {
         });
         jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 140, -1));
 
+        jButton4.setBackground(new java.awt.Color(250, 250, 250));
+        jButton4.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboard.png"))); // NOI18N
         jButton4.setText("Dashboard");
         jButton4.setBorderPainted(false);
@@ -118,6 +190,8 @@ public class MemberLoan extends javax.swing.JFrame {
         });
         jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 140, -1));
 
+        jButton5.setBackground(new java.awt.Color(250, 250, 250));
+        jButton5.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logout.png"))); // NOI18N
         jButton5.setText("Logout");
         jButton5.setBorderPainted(false);
@@ -127,6 +201,10 @@ public class MemberLoan extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 140, -1));
+
+        jLabel2.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 10)); // NOI18N
+        jLabel2.setText("User ID: 1234");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 85, -1, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 320));
 
@@ -152,6 +230,18 @@ public class MemberLoan extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -194,13 +284,22 @@ public class MemberLoan extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

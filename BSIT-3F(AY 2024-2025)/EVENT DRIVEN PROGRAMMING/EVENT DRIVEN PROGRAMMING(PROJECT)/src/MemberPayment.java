@@ -25,12 +25,25 @@ public class MemberPayment extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel11 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jPasswordField1 = new javax.swing.JPasswordField();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -71,7 +84,110 @@ public class MemberPayment extends javax.swing.JFrame {
         jLabel4.setText("Payment");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 510, 320));
+        jScrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jTable1.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 12)); // NOI18N
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"JU001", "10/14/2024", "₱1,200.00", "5%", "2 of 6", "", "PENDING"},
+                {"JU002", "10/07/2024", "₱800.00", "3%", "4 of 12", "10/07/2024", "COMPLETED"},
+                {"JU001", "09/30/2024", "₱1,200.00", "5%", "1 of 6", "09/29/2024", "COMPLETED"},
+                {"JU002", "09/23/2024", "₱800.00", "3%", "3 of 12", "09/24/2024", "LATE"},
+                {"JU002", "09/16/2024", "₱800.00", "3%", "2 of 12", "09/16/2024", "COMPLETED"},
+                {"JU002", "09/09/2024", "₱800.00", "3%", "1 of 12", "09/11/2024", "LATE"}
+            },
+            new String [] {
+                "Loan ID", "Due on", "Total Payment", "Interest", "Weeks", "Completed", "Status"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable1.setRowHeight(30);
+        jTable1.setShowGrid(false);
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 490, 130));
+
+        jLabel11.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel11.setText("Enter Amount");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, 30));
+
+        buttonGroup1.add(jRadioButton1);
+        jRadioButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jRadioButton1.setText("GCash (0951718272)");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
+
+        buttonGroup1.add(jRadioButton2);
+        jRadioButton2.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jRadioButton2.setText("PayMaya (0951718272)");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("MS Reference Sans Serif", 1, 12)); // NOI18N
+        jLabel12.setText("Choose Payment");
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel13.setText("Enter Loan ID");
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, 30));
+
+        jLabel14.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
+        jLabel14.setText("Enter Password");
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, 30));
+
+        jButton6.setBackground(new java.awt.Color(0, 153, 0));
+        jButton6.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("PAY");
+        jButton6.setBorder(null);
+        jButton6.setBorderPainted(false);
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 100, 30));
+
+        jTextField4.setName(""); // NOI18N
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 200, 30));
+
+        jTextField5.setName(""); // NOI18N
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 200, 30));
+        jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 200, 30));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 510, 440));
 
         jPanel3.setBackground(new java.awt.Color(232, 238, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -79,12 +195,16 @@ public class MemberPayment extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/profile.png"))); // NOI18N
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
-        jLabel2.setText("User ID: 12345678");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 85, -1, -1));
+        jLabel2.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 10)); // NOI18N
+        jLabel2.setText("User ID: 1234");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 85, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(250, 250, 250));
+        jButton1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edit profile.png"))); // NOI18N
         jButton1.setText("Account Settings");
         jButton1.setBorderPainted(false);
+        jButton1.setMargin(new java.awt.Insets(2, 0, 3, 0));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -92,6 +212,8 @@ public class MemberPayment extends javax.swing.JFrame {
         });
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 140, -1));
 
+        jButton2.setBackground(new java.awt.Color(250, 250, 250));
+        jButton2.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loan.png"))); // NOI18N
         jButton2.setText("Loan Application");
         jButton2.setAlignmentY(0.0F);
@@ -104,6 +226,8 @@ public class MemberPayment extends javax.swing.JFrame {
         });
         jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 140, -1));
 
+        jButton3.setBackground(new java.awt.Color(250, 250, 250));
+        jButton3.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/credit-card.png"))); // NOI18N
         jButton3.setText("Payments");
         jButton3.setBorderPainted(false);
@@ -114,6 +238,8 @@ public class MemberPayment extends javax.swing.JFrame {
         });
         jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 140, -1));
 
+        jButton4.setBackground(new java.awt.Color(250, 250, 250));
+        jButton4.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboard.png"))); // NOI18N
         jButton4.setText("Dashboard");
         jButton4.setBorderPainted(false);
@@ -124,6 +250,8 @@ public class MemberPayment extends javax.swing.JFrame {
         });
         jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 140, -1));
 
+        jButton5.setBackground(new java.awt.Color(250, 250, 250));
+        jButton5.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logout.png"))); // NOI18N
         jButton5.setText("Logout");
         jButton5.setBorderPainted(false);
@@ -132,9 +260,9 @@ public class MemberPayment extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 140, -1));
+        jPanel3.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 140, 30));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 320));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 200, 440));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -158,6 +286,26 @@ public class MemberPayment extends javax.swing.JFrame {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,12 +343,18 @@ public class MemberPayment extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -209,5 +363,12 @@ public class MemberPayment extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
     // End of variables declaration//GEN-END:variables
 }
