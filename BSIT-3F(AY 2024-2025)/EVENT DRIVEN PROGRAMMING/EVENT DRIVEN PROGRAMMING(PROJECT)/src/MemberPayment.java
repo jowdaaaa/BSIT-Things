@@ -170,6 +170,7 @@ public class MemberPayment extends javax.swing.JFrame {
         });
         jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 100, 30));
 
+        jTextField4.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jTextField4.setName(""); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,6 +179,7 @@ public class MemberPayment extends javax.swing.JFrame {
         });
         jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 200, 30));
 
+        jTextField5.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jTextField5.setName(""); // NOI18N
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,6 +187,8 @@ public class MemberPayment extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 200, 30));
+
+        jPasswordField1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 200, 30));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 510, 440));

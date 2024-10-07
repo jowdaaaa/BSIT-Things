@@ -120,10 +120,15 @@ public class AdminMemberAdd extends javax.swing.JFrame {
         jLabel25.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel25.setText("Last Name");
         jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 75, -1, 20));
+
+        jTextField4.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 130, -1));
+
+        jTextField7.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 30, -1));
 
         jComboBox1.setBackground(new java.awt.Color(249, 249, 249));
+        jComboBox1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Day", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +146,7 @@ public class AdminMemberAdd extends javax.swing.JFrame {
         jPanel2.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, -1, 20));
 
         jComboBox2.setBackground(new java.awt.Color(249, 249, 249));
+        jComboBox2.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sex", "Male", "Female" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +156,7 @@ public class AdminMemberAdd extends javax.swing.JFrame {
         jPanel2.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, -1, -1));
 
         jComboBox3.setBackground(new java.awt.Color(249, 249, 249));
+        jComboBox3.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Month", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,8 +166,11 @@ public class AdminMemberAdd extends javax.swing.JFrame {
         jPanel2.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, -1, -1));
 
         jComboBox4.setBackground(new java.awt.Color(249, 249, 249));
+        jComboBox4.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Year", "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958", "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969", "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023" }));
         jPanel2.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, 80, -1));
+
+        jTextField10.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 160, -1));
 
         jLabel36.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
@@ -170,23 +180,36 @@ public class AdminMemberAdd extends javax.swing.JFrame {
         jLabel37.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel37.setText("Middle Name");
         jPanel2.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 75, 80, 20));
+
+        jTextField11.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, 120, -1));
 
         jLabel38.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel38.setText("Suffix");
         jPanel2.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 75, 40, 20));
+
+        jTextField12.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 60, -1));
 
         jLabel32.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel32.setText("Nationality");
         jPanel2.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 70, 20));
+
+        jTextField8.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 150, -1));
 
         jLabel33.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel33.setText("Religion");
         jPanel2.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 50, 20));
+
+        jTextField9.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 180, -1));
+
+        jTextField13.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 150, -1));
+
+        jTextField14.setFont(new java.awt.Font("Microsoft JhengHei UI Light", 0, 12)); // NOI18N
+        jTextField14.setText("₱");
         jPanel2.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 210, 140, -1));
 
         jLabel35.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
@@ -208,12 +231,18 @@ public class AdminMemberAdd extends javax.swing.JFrame {
         jLabel42.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel42.setText("Username");
         jPanel2.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, 20));
+
+        jPasswordField1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 150, -1));
+
+        jPasswordField2.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 150, -1));
 
         jLabel43.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jLabel43.setText("Password");
         jPanel2.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, 20));
+
+        jTextField15.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 150, -1));
 
         jButton6.setBackground(new java.awt.Color(0, 153, 0));

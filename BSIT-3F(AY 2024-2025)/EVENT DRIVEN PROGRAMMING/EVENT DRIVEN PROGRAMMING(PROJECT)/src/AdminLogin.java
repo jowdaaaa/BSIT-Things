@@ -59,6 +59,7 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel4.setText("Username");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, -1, 20));
 
+        jTextField1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -76,6 +77,8 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setText("Password");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, -1, 20));
+
+        jPasswordField1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 200, 30));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 102));

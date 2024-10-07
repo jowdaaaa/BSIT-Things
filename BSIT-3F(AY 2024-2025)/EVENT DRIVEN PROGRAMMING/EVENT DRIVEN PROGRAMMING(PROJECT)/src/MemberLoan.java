@@ -78,6 +78,7 @@ public class MemberLoan extends javax.swing.JFrame {
         jLabel9.setText("Loan Term (Months)");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, -1, -1));
 
+        jTextField1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 12)); // NOI18N
         jTextField1.setName(""); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
