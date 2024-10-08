@@ -1,11 +1,5 @@
 public class TentativeFinalGrade implements Grade {
-    private void setRemark(double grade){
-        if(grade<75){
-            System.out.println("Remarks: Failed");
-        } else {
-            System.out.println("Remarks: Passed");
-        }
-    } 
+    protected double grade;
 
     @Override
     public void compute(){
@@ -13,4 +7,12 @@ public class TentativeFinalGrade implements Grade {
         System.out.println("Tentative Final Grade: " + grade);
         setRemark(grade);
     }
+
+    private void setRemark(double grade){
+        if(grade<75){
+            System.out.println("Remarks: Failed");
+        } else {
+            System.out.println("Remarks: Passed");
+        }
+    } 
 }

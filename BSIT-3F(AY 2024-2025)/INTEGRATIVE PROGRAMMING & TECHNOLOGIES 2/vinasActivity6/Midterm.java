@@ -1,11 +1,5 @@
 public class Midterm implements Grade {
-    private void setRemark(double grade){
-        if(grade<75){
-            System.out.println("Remarks: Failed");
-        } else {
-            System.out.println("Remarks: Passed");
-        }
-    } 
+    protected double grade;
 
     @Override
     public void compute(){
@@ -13,5 +7,13 @@ public class Midterm implements Grade {
         System.out.println("Midterm: " + grade);
         setRemark(grade);
     }
+
+    private void setRemark(double grade){
+        if(grade<75){
+            System.out.println("Remarks: Failed");
+        } else {
+            System.out.println("Remarks: Passed");
+        }
+    } 
 
 }
