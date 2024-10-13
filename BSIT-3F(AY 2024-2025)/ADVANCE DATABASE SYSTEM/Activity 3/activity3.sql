@@ -48,7 +48,7 @@ CREATE TABLE tparkssold (
 INSERT INTO tparkssold (park_code, park_name, park_city, park_country) VALUE ("FR1001","Fairyland", "PARIS", "FR");
 INSERT INTO tparkssold (park_code, park_name, park_city, park_country) VALUE ("UK3452","PleasureLand", "STOKE", "UK");
 INSERT INTO tparkssold (park_code, park_name, park_city, park_country) VALUE ("ZA1342","GoldTown", "JOHANNESBURG", "ZA");
-
+select * from tparksold;
 CREATE VIEW tparksold AS
 SELECT *
 FROM tparkssold;
@@ -56,7 +56,8 @@ SELECT * FROM tparksold;
 
 -- E6.4
 CREATE VIEW emp_details AS
-SELECT e.emp_num, e.park_code, p.park_name, e.emp_lname, e.emp_fname, e.emp_hire_date, e.emp_bod
+SELECT e.emp_num, e.park_code, p.park_name, e.emp_lname, 
+		e.emp_fname, e.emp_hire_date, e.emp_bod
 FROM employee e
 LEFT JOIN tparkssold p
 ON e.park_code = p.park_code;
@@ -66,7 +67,6 @@ SELECT * FROM emp_details;
 SELECT emp_fname, emp_lname, park_name FROM emp_details;
 
 -- E6.6
-drop table sales;
 CREATE TABLE sales (
 	park_name varchar(20),
     line_price decimal(10.2)
@@ -91,18 +91,23 @@ CREATE TABLE sale(
 	sale_date date
 );
 INSERT INTO sale(sale_date) VALUE ('2007-05-18');
+select * from sale;
 
-SELECT DISTINCT(DATE_FORMAT(sale_date, '%a-%e-%m-%y'))
+SELECT DISTINCT(DATE_FORMAT(sale_date, '%a-%e-%m-%y')) AS Date_Format
 FROM sale;
 
 -- E6.8
-SELECT emp_fname, emp_lname, CONCAT(DATE_FORMAT(emp_bod, '%m'), '01', UPPER(SUBSTR(emp_lname, 1, 6))) AS user_id FROM employee;
+SELECT emp_fname, emp_lname, 
+	   CONCAT(DATE_FORMAT(emp_bod, '%m'), '01', UPPER(SUBSTR(emp_lname, 1, 6))) 
+AS user_id FROM employee;
 
 -- E6.9
-SELECT emp_fname, emp_lname, emp_bod FROM employee WHERE DATE_FORMAT(emp_bod, '%d') = '14';
+SELECT emp_fname, emp_lname, emp_bod 
+FROM employee WHERE DATE_FORMAT(emp_bod, '%d') = '14';
 
 -- E6.10
-SELECT emp_fname, emp_lname, CONCAT(SUBSTR(emp_phone, 1, 3), LOWER(SUBSTR(emp_fname, 1, 2))) AS user_password FROM employee; 
+SELECT emp_fname, emp_lname, CONCAT(SUBSTR(emp_phone, 1, 3), LOWER(SUBSTR(emp_fname, 1, 2))) 
+AS user_password FROM employee; 
 
 
 

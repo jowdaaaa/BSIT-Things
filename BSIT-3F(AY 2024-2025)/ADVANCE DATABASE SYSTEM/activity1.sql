@@ -1,7 +1,8 @@
-CREATE DATABASE mydb;
+-- 1. Create a database named myDB
+CREATE DATABASE myDB;
+USE myDB;
 
-USE mydb;
-
+-- 2. Create a table named employee
 CREATE TABLE employee (
 	emp_ID int PRIMARY KEY AUTO_INCREMENT,
     first_name varchar(100),
@@ -10,6 +11,7 @@ CREATE TABLE employee (
     hire_date date
 );
 
+-- 3. Add 10 records
 INSERT INTO employee (first_name, last_name, hourly_pay, hire_date) VALUE ("Judah Paulo", "Vinas", "100.00", "2024-08-29");
 INSERT INTO employee (first_name, last_name, hourly_pay, hire_date) VALUE ("John Mark David", "Pajenago", "100.00", "2024-08-29");
 INSERT INTO employee (first_name, last_name, hourly_pay, hire_date) VALUE ("Roland Joseph", "Cordez", "100.00", "2024-08-29");
@@ -23,14 +25,23 @@ INSERT INTO employee (first_name, last_name, hourly_pay, hire_date) VALUE ("Dobi
 
 SELECT * FROM employee;
 
+-- 4. Rename the table employee to employees
 ALTER TABLE employee RENAME employees;
+
+-- 5. Add phone_number column
 ALTER TABLE employees ADD phone_number varchar(11);
+
+-- 6. Change phone_number to email
 ALTER TABLE employees CHANGE phone_number email varchar(50);
+
+-- 7. Change the position of email next to last_name
 ALTER TABLE employees MODIFY COLUMN email varchar(50) AFTER last_name;
 
-INSERT INTO employees (last_name, first_name) VALUE ("Skibidi","Cophal");
-INSERT INTO employees (last_name, first_name) VALUE ("Sap","Neg-ah"); 
+-- 8. Add 2 records populate emp_ID, last name and first_name only
+INSERT INTO employees (emp_ID, last_name, first_name) VALUE (11, "Skibidi","Cophal");
+INSERT INTO employees (emp_ID, last_name, first_name) VALUE (12, "Sap","Neg-ah"); 
 
+-- 9. Put a value on email column
 UPDATE employees SET email = "juvinas@my.cspc.edu.ph" WHERE emp_ID = 1;
 UPDATE employees SET email = "jopajenago@my.cspc.edu.ph" WHERE emp_ID = 2;
 UPDATE employees SET email = "rocordez@my.cspc.edu.ph" WHERE emp_ID = 3;

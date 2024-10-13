@@ -1,6 +1,7 @@
 create database task2;
 use task2;
 
+-- Create table Inventory
 CREATE TABLE Inventory(
     ItemID INT AUTO_INCREMENT PRIMARY KEY,
     ItemName varchar(100),
@@ -9,6 +10,7 @@ CREATE TABLE Inventory(
 );
 select * from Inventory;
 
+-- Create stored procedure
 DELIMITER //
 create procedure ManageInventory(
 	IN action varchar(10),
@@ -19,7 +21,7 @@ create procedure ManageInventory(
 )
 BEGIN
 	IF action="add" then
-		INSERT into Invetory(ItemName,Quantity,Price) Values (itemName, quantity, price);
+		INSERT into Inventory(ItemName,Quantity,Price) Values (itemName, quantity, price);
 	ELSEIF action="update" then
 		UPDATE Inventory SET ItemName= itemName, Quantity = quantity, Price = price
         WHERE ItemName = itemName;
@@ -30,3 +32,8 @@ BEGIN
 	END IF;
 END//
 DELIMITER ;
+
+-- Insert a value using the stored procedure
+CALL ManageInventory("add", 1, "Lapis", 5, 50.00); 
+CALL ManageInventory("update", null, "Ballpen", 2, 30.00); 
+SELECT * FROM Inventory;
