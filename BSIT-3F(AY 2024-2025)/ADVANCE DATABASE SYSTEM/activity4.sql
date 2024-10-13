@@ -42,12 +42,13 @@ create table claim(
 );
 
 insert into claim (claimID, claim_date, custid) values
-	("CL001", "02/06/14", "P0002"),
-    ("CL002", "10/07/14", "P0001"),
-    ("CL003", "24/07/13", "P0004"),
-    ("CL004", "05/08/14", "P0002"),
-    ("CL012", "07/07/14", "P0003");
+	("CL001", "02/06/14", "P002"),
+    ("CL002", "10/07/14", "P001"),
+    ("CL003", "24/07/13", "P004"),
+    ("CL004", "05/08/14", "P002"),
+    ("CL012", "07/07/14", "P003");
 select * from claim;
+
 
 create table car_component(
 	compID varchar(100) primary key,
@@ -102,8 +103,6 @@ FROM customer C
 JOIN claim CL
 ON C.custid = CL.custid;
 SELECT * FROM CUSTOMER_CLAIM;
-
-drop view CUSTOMER_CLAIM;
 
 -- 10.
 CREATE VIEW car_claim AS
