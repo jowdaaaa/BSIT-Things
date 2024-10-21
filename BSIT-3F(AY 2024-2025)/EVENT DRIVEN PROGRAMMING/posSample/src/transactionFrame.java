@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -8,12 +11,13 @@
  * @author vinas
  */
 public class transactionFrame extends javax.swing.JFrame {
-
+private double priceSize, totalPrice, pizzaQTY;
     /**
      * Creates new form transactionFrame
      */
     public transactionFrame() {
         initComponents();
+        systemUser.setText(loginFrame.setUsername);
     }
 
     /**
@@ -28,27 +32,27 @@ public class transactionFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        cash = new javax.swing.JTextField();
+        total = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        cancel = new javax.swing.JButton();
+        ham = new javax.swing.JCheckBox();
+        pep = new javax.swing.JCheckBox();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
+        qty = new javax.swing.JTextField();
+        compute = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        change = new javax.swing.JLabel();
+        computeChange = new javax.swing.JButton();
+        save = new javax.swing.JButton();
+        size = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        systemUser = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -65,45 +69,45 @@ public class transactionFrame extends javax.swing.JFrame {
         jLabel2.setText("Pizza Ordering System");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 270, 30));
 
-        jTextField2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, 220, 30));
+        cash.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jPanel1.add(cash, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, 220, 30));
 
-        jLabel3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(204, 102, 0));
-        jLabel3.setText("0.00");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, 30));
+        total.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        total.setForeground(new java.awt.Color(204, 102, 0));
+        total.setText("0.00");
+        jPanel1.add(total, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, 30));
 
         jLabel4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
         jLabel4.setText("Toppings :");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, 30));
 
-        jButton1.setBackground(new java.awt.Color(153, 153, 153));
-        jButton1.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
-        jButton1.setText("Cancel");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        cancel.setBackground(new java.awt.Color(153, 153, 153));
+        cancel.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
+        cancel.setText("Cancel");
+        cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                cancelActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 90, 30));
+        jPanel1.add(cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 90, 30));
 
-        jCheckBox1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
-        jCheckBox1.setText("Ham");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        ham.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
+        ham.setText("Ham");
+        ham.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                hamActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, -1, 30));
+        jPanel1.add(ham, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, -1, 30));
 
-        jCheckBox2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
-        jCheckBox2.setText("Pepperoni");
-        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+        pep.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
+        pep.setText("Pepperoni");
+        pep.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox2ActionPerformed(evt);
+                pepActionPerformed(evt);
             }
         });
-        jPanel1.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, -1, 30));
+        jPanel1.add(pep, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, -1, 30));
 
         jLabel5.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
         jLabel5.setText("Quantity : ");
@@ -121,53 +125,53 @@ public class transactionFrame extends javax.swing.JFrame {
         jLabel8.setText("TOTAL :");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, 30));
 
-        jTextField4.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 220, 30));
+        qty.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jPanel1.add(qty, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 220, 30));
 
-        jButton2.setBackground(new java.awt.Color(252, 252, 252));
-        jButton2.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
-        jButton2.setText("COMPUTE");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        compute.setBackground(new java.awt.Color(252, 252, 252));
+        compute.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
+        compute.setText("COMPUTE");
+        compute.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                computeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 220, 30));
+        jPanel1.add(compute, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 220, 30));
 
         jLabel9.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
         jLabel9.setText("CHANGE :");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, -1, 30));
 
-        jLabel10.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(204, 102, 0));
-        jLabel10.setText("0.00");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 390, -1, 30));
+        change.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        change.setForeground(new java.awt.Color(204, 102, 0));
+        change.setText("0.00");
+        jPanel1.add(change, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 390, -1, 30));
 
-        jButton3.setBackground(new java.awt.Color(252, 252, 252));
-        jButton3.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
-        jButton3.setText("Compute Change");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        computeChange.setBackground(new java.awt.Color(252, 252, 252));
+        computeChange.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
+        computeChange.setText("Compute Change");
+        computeChange.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                computeChangeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 220, 30));
+        jPanel1.add(computeChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 220, 30));
 
-        jButton4.setBackground(new java.awt.Color(0, 153, 51));
-        jButton4.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("SAVE Transaction");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        save.setBackground(new java.awt.Color(0, 153, 51));
+        save.setFont(new java.awt.Font("Microsoft YaHei", 1, 12)); // NOI18N
+        save.setForeground(new java.awt.Color(255, 255, 255));
+        save.setText("SAVE Transaction");
+        save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                saveActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 420, 220, 30));
+        jPanel1.add(save, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 420, 220, 30));
 
-        jComboBox1.setBackground(new java.awt.Color(252, 252, 252));
-        jComboBox1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Small", "Medium", "Large" }));
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 220, 30));
+        size.setBackground(new java.awt.Color(252, 252, 252));
+        size.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
+        size.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Small", "Medium", "Large" }));
+        jPanel1.add(size, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 220, 30));
 
         jLabel11.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
         jLabel11.setText("====================================");
@@ -181,39 +185,86 @@ public class transactionFrame extends javax.swing.JFrame {
         jLabel13.setText("HELLO :");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, -1, 30));
 
-        jLabel14.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(204, 102, 0));
-        jLabel14.setText("System User");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, -1, 30));
+        systemUser.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+        systemUser.setForeground(new java.awt.Color(204, 102, 0));
+        systemUser.setText("System User");
+        jPanel1.add(systemUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, -1, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void cancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelActionPerformed
+        int answerCancel;
+        
+        answerCancel = JOptionPane.showConfirmDialog(null, "cancel?");
+        if (answerCancel == JOptionPane.YES_OPTION){
+            setClear();
+        }
+    }//GEN-LAST:event_cancelActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void hamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hamActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_hamActionPerformed
 
-    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+    private void pepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pepActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox2ActionPerformed
+    }//GEN-LAST:event_pepActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void computeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_computeActionPerformed
+        pizzaQTY = Double.parseDouble(qty.getText());
+        
+        if(size.getSelectedItem().equals("Small")){
+            priceSize = 100;
+            getTotal();
+        } else if(size.getSelectedItem().equals("Medium")){
+            priceSize = 200;
+            getTotal();
+        } else if(size.getSelectedItem().equals("Large")){
+            priceSize = 300;
+            getTotal();
+        }
+    }//GEN-LAST:event_computeActionPerformed
+    
+    private void setClear(){
+        qty.setText("");
+        cash.setText("");
+        total.setText("0.00");
+        change.setText("0.00");
+        pep.setSelected(false);
+        ham.setSelected(false);
+        
+    }
+    
+    private void getTotal(){
+        if (pep.isSelected() && ham.isSelected()){
+            totalPrice = (priceSize + 160 + 100)*pizzaQTY;
+            total .setText(Double.toString(totalPrice));
+        } else if (pep.isSelected()){
+            totalPrice = (priceSize + 160)*pizzaQTY;
+            total .setText(Double.toString(totalPrice));
+        } else if (ham.isSelected()){
+            totalPrice = (priceSize + 100)*pizzaQTY;
+            total .setText(Double.toString(totalPrice));
+        } else {
+            totalPrice = (priceSize)*pizzaQTY;
+            total .setText(Double.toString(totalPrice));
+        }
+    }
+    
+    private void computeChangeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_computeChangeActionPerformed
+        double getChange, cashG, totalC;
+        cashG = Double.parseDouble(cash.getText());
+        totalC = Double.parseDouble(total.getText());
+        
+        getChange = cashG - totalC;
+        change.setText(Double.toString(getChange));
+    }//GEN-LAST:event_computeChangeActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_saveActionPerformed
 
     /**
      * @param args the command line arguments
@@ -251,21 +302,17 @@ public class transactionFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton cancel;
+    private javax.swing.JTextField cash;
+    private javax.swing.JLabel change;
+    private javax.swing.JButton compute;
+    private javax.swing.JButton computeChange;
+    private javax.swing.JCheckBox ham;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -273,7 +320,11 @@ public class transactionFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JCheckBox pep;
+    private javax.swing.JTextField qty;
+    private javax.swing.JButton save;
+    private javax.swing.JComboBox<String> size;
+    private javax.swing.JLabel systemUser;
+    private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
 }
